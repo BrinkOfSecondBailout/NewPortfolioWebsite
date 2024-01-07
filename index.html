@@ -9,30 +9,35 @@
     <link rel="stylesheet" href="css/output.css">
 </head>
 <body>
-    <div id="desktop-nav">
-        <div class="logo">Danny.dev</div>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </div>
-    <div id="hamburger-nav">
-        <div class="logo">Danny.dev</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <a href="#about" onclick="toggleMenu()">About</a>
-                <a href="#experience" onclick="toggleMenu()">Experience</a>
-                <a href="#projects" onclick="toggleMenu()">Projects</a>
-                <a href="#contact" onclick="toggleMenu()">Contact</a>
+    <div class="m-0 p-0 relative">
+
+        <div class=" hidden md:flex justify-between items-center p-4 bg-blue-100 fixed w-full top-0 z-10">
+            <a href="#home"><div class="text-2xl">Danny.dev</div></a>
+            <div id="">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
+        
+        <div class="bg-blue-100 flex justify-between items-center p-4 md:hidden fixed w-full top-0 z-10">
+            <a href="#home"><div class="text-2xl">Danny.dev</div></a>
+            <div class="" id="hamburger-icon">
+                <div class="cursor-pointer" onclick="toggleMenu">
+                    <div id="bar1" class="block h-1 w-6 bg-black transition-transform transform"></div>
+                    <div id="bar2" class="block h-1 w-6 bg-black mt-1 transition-transform transform"></div>
+                    <div id="bar3"class="block h-1 w-6 bg-black mt-1 transition-transform transform"></div>
+                </div>
+                <div class="hidden flex flex-col absolute top-11 right-6 p-3 text-right bg-gray-300 rounded-md gap-4" id="nav-links">
+                    <a href="#about" onclick="toggleMenu()">About</a>
+                    <a href="#experience" onclick="toggleMenu()">Experience</a>
+                    <a href="#projects" onclick="toggleMenu()">Projects</a>
+                    <a href="#contact" onclick="toggleMenu()">Contact</a>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="script.js" defer></script>
 </body>
 </html>

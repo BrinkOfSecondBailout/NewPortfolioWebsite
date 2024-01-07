@@ -2,3 +2,14 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+#bar1.opened {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#bar2.opened {
+    opacity: 0;
+}
+
+#bar3.opened {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
