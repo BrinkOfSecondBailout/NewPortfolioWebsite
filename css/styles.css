@@ -54,7 +54,7 @@ body:before {
     background-color: #cfeaff;
 }
 
-#home , #about , #experience{
+#home , #about , #experience, #projects{
     height: 120vh;
 }
 

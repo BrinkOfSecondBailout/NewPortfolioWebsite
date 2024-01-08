@@ -66,3 +66,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
+// for Personal Project page, toggle description
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const descriptionLinks = 
+// });
