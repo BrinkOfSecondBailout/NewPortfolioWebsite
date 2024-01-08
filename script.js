@@ -1,5 +1,5 @@
 function toggleMenu() {
-    var menu = document.getElementById('nav-links');
+    var menu = document.getElementById('burger-links');
     var bar1 = document.getElementById('bar1');
     var bar2 = document.getElementById('bar2');
     var bar3 = document.getElementById('bar3');
@@ -20,3 +20,42 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.getElementById('hamburger-icon').addEventListener('click', toggleMenu);
+
+document.addEventListener('DOMContentLoaded', function () {
+    function scrollToTarget(target) {
+        const targetElement = document.querySelector(target);
+        if (targetElement) {
+            const offset = document.querySelector('.fixed').offsetHeight;
+
+            window.scrollTo({
+                top: targetElement.offsetTop - offset,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    document.querySelectorAll('#burger-links a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetSection = this.getAttribute('href');
+            scrollToTarget(targetSection);
+        });
+    });
+
+    document.querySelectorAll('#nav-links a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetSection = this.getAttribute('href');
+            scrollToTarget(targetSection);
+        });
+    });
+
+    document.querySelectorAll('#top-bar a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetSection = this.getAttribute('href');
+            scrollToTarget(targetSection);
+        });
+    });
+
+});

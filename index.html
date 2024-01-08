@@ -15,9 +15,9 @@
 <body>
     <div class="m-0 p-0 relative">
 
-        <div class=" hidden md:flex justify-between items-center p-4 bg-skybg fixed w-full top-0 z-10">
-            <a href="#home"><div class="font-comfortaa text-xl">Danny.dev</div></a>
-            <div id="" class="font-ropa text-lg">
+        <div id="top-bar" class=" hidden md:flex justify-between items-center p-4 skyblue fixed w-full top-0 z-10">
+            <a href="#home"><div class="font-comfortaa text-xl">danny.dev</div></a>
+            <div id="nav-links" class="font-ropa text-lg">
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
@@ -25,15 +25,15 @@
             </div>
         </div>
         
-        <div class="bg-skybg flex justify-between items-center p-4 md:hidden fixed w-full top-0 z-10">
-            <a href="#home"><div class="font-comfortaa text-xl">Danny.dev</div></a>
+        <div id="top-bar" class="skyblue flex justify-between items-center p-4 md:hidden fixed w-full top-0 z-10">
+            <a href="#home"><div class="font-comfortaa text-xl">danny.dev</div></a>
             <div class="" id="hamburger-icon">
                 <div class="cursor-pointer" onclick="toggleMenu">
                     <div id="bar1" class="block h-1 w-6 bg-black transition-transform transform"></div>
                     <div id="bar2" class="block h-1 w-6 bg-black mt-1 transition-transform transform"></div>
                     <div id="bar3"class="block h-1 w-6 bg-black mt-1 transition-transform transform"></div>
                 </div>
-                <div class="hidden font-ropa text-lg flex flex-col absolute top-12 right-6 p-4 text-center bg-white rounded-lg gap-4" id="nav-links">
+                <div id="burger-links" class="hidden font-ropa text-lg flex flex-col absolute top-12 right-6 p-4 text-center bg-white rounded-lg gap-4" >
                     <a href="#about" onclick="toggleMenu()">About</a>
                     <a href="#experience" onclick="toggleMenu()">Experience</a>
                     <a href="#projects" onclick="toggleMenu()">Projects</a>
@@ -78,8 +78,14 @@
         </section>
 
         <section id="about">
-            <div>
-
+            <div class="flex flex-col justify-around">
+                <div class="w-52 h-36 mx-auto">
+                    <img src="assets/profile2.jpg" class="rounded-2xl shadow-xl border border-4 border-white">
+                </div>
+                <div>
+                    <p>Hello world! I am a lifelong learner who found his true passion in software development and want to make a positive impact in the world. <br/><br/>I graduated from CodingDojo's 3-stack Software Development Bootcamp and after many hours spent building real world projects, I am ready for employment.<br /><br />In my free time I enjoy competing in Brazilian Jiujitsu, studying Bitcoin, financial literacy, and of course, more coding. <br /><br /> Thank you for considering my portfolio, I am eager to discuss how my skills and persistence to succeed will align with the
+                    goals of your organization.</p>
+                </div>
             </div>
         </section>
 

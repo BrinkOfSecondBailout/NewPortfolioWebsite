@@ -49,3 +49,11 @@ body:before {
     background: url(/assets/sky-bg2.jpg) no-repeat center center;
     background-size: cover;
 }
+
+.skyblue {
+    background-color: #cfeaff;
+}
+
+#home , #about{
+    height: 120vh;
+}
