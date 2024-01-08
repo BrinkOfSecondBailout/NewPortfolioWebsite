@@ -1,3 +1,5 @@
+// Toggle Hamburger Menu
+
 function toggleMenu() {
     var menu = document.getElementById('burger-links');
     var bar1 = document.getElementById('bar1');
@@ -10,6 +12,10 @@ function toggleMenu() {
     bar3.classList.toggle('opened');
 }
 
+document.getElementById('hamburger-icon').addEventListener('click', toggleMenu);
+
+// Type Animation in Home Page
+
 document.addEventListener('DOMContentLoaded', function() {
     new Typed(".auto-typed", {
         strings: ["Full Stack Developer", "Problem Solver", "Lifelong Learner"],
@@ -19,7 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.getElementById('hamburger-icon').addEventListener('click', toggleMenu);
+
+// Smooth Scroll
 
 document.addEventListener('DOMContentLoaded', function () {
     function scrollToTarget(target) {
