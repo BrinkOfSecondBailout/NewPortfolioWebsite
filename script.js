@@ -10,4 +10,13 @@ function toggleMenu() {
     bar3.classList.toggle('opened');
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    new Typed(".auto-typed", {
+        strings: ["Full Stack Developer", "Problem Solver", "Lifelong Learner"],
+        typeSpeed: 70,
+        backSpeed: 40,
+        loop: true
+    });
+});
+
 document.getElementById('hamburger-icon').addEventListener('click', toggleMenu);

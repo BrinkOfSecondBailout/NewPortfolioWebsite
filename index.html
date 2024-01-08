@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danny Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Outfit&family=Ropa+Sans&family=Teko&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/output.css">
@@ -11,9 +15,9 @@
 <body>
     <div class="m-0 p-0 relative">
 
-        <div class=" hidden md:flex justify-between items-center p-4 bg-blue-100 fixed w-full top-0 z-10">
-            <a href="#home"><div class="text-2xl">Danny.dev</div></a>
-            <div id="">
+        <div class=" hidden md:flex justify-between items-center p-4 bg-skybg fixed w-full top-0 z-10">
+            <a href="#home"><div class="font-comfortaa text-xl">Danny.dev</div></a>
+            <div id="" class="font-ropa text-lg">
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
@@ -21,15 +25,15 @@
             </div>
         </div>
         
-        <div class="bg-blue-100 flex justify-between items-center p-4 md:hidden fixed w-full top-0 z-10">
-            <a href="#home"><div class="text-2xl">Danny.dev</div></a>
+        <div class="bg-skybg flex justify-between items-center p-4 md:hidden fixed w-full top-0 z-10">
+            <a href="#home"><div class="font-comfortaa text-xl">Danny.dev</div></a>
             <div class="" id="hamburger-icon">
                 <div class="cursor-pointer" onclick="toggleMenu">
                     <div id="bar1" class="block h-1 w-6 bg-black transition-transform transform"></div>
                     <div id="bar2" class="block h-1 w-6 bg-black mt-1 transition-transform transform"></div>
                     <div id="bar3"class="block h-1 w-6 bg-black mt-1 transition-transform transform"></div>
                 </div>
-                <div class="hidden flex flex-col absolute top-11 right-6 p-3 text-right bg-gray-300 rounded-md gap-4" id="nav-links">
+                <div class="hidden font-ropa text-lg flex flex-col absolute top-12 right-6 p-4 text-right bg-white rounded-md gap-4" id="nav-links">
                     <a href="#about" onclick="toggleMenu()">About</a>
                     <a href="#experience" onclick="toggleMenu()">Experience</a>
                     <a href="#projects" onclick="toggleMenu()">Projects</a>
@@ -37,7 +41,57 @@
                 </div>
             </div>
         </div>
+
+        <section id="home">
+            <div id="profile-pic" class="w-52 h-52 mx-auto mt-24 " >
+                <img src="assets/profile.png" class="rounded-full shadow-xl border-double border-4 border-blue-500">
+            </div>
+            <div class="p-10 text-center">
+                <div class="font-comfortaa font-bold text-md">
+                    <h3>Hi! My name is</h3>
+                </div>
+                <div class="font-outfit text-5xl tracking-widest p-1">
+                    <h1>Danny</h1>
+                </div>
+                <div class="font-comfortaa font-bold text-md mt-4">
+                    <h2><span class="auto-typed"></span></h2>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div>
+                    <button>Download Resume</button>
+                </div>
+                <div>
+                    <button>Contact Info</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div>
+
+            </div>
+        </section>
+
+        <section id="experience">
+            <div>
+
+            </div>
+        </section>
+
+        <section id="projects">
+            <div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <div>
+
+            </div>
+        </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js" defer></script>
 </body>
 </html>

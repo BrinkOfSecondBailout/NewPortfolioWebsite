@@ -13,3 +13,39 @@
 #bar3.opened {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
+.font-outfit {
+    font-family: 'Outfit', sans-serif;
+}
+
+.font-teko {
+    font-family: 'Teko', sans-serif;
+}
+.font-comfortaa {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.font-trebuchet {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.font-ropa {
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+.auto-typed {
+    width: 100%;
+}
+
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(/assets/sky-bg2.jpg) no-repeat center center;
+    background-size: cover;
+}
