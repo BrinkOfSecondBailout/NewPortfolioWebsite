@@ -15,9 +15,10 @@
 <body>
     <div class="m-0 p-0 relative">
 
-        <div id="top-bar" class=" hidden md:flex justify-between items-center p-4 skyblue fixed w-full top-0 z-10">
+        <div id="top-bar" class=" hidden md:flex justify-between items-center p-3 skyblue fixed w-full top-0 z-10">
             <a href="#home"><div class="font-comfortaa text-xl">danny.dev</div></a>
-            <div id="nav-links" class="font-ropa text-lg">
+            <div id="nav-links" class="font-ropa text-lg flex">
+                <a href="#home"><img src="assets/home.png" class="w-5"></a>
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
@@ -25,7 +26,7 @@
             </div>
         </div>
         
-        <div id="top-bar" class="skyblue flex justify-between items-center p-4 md:hidden fixed w-full top-0 z-10">
+        <div id="top-bar" class="skyblue flex justify-between items-center p-3 md:hidden fixed w-full top-0 z-10 ">
             <a href="#home"><div class="font-comfortaa text-xl">danny.dev</div></a>
             <div class="" id="hamburger-icon">
                 <div class="cursor-pointer" onclick="toggleMenu">
@@ -33,7 +34,8 @@
                     <div id="bar2" class="block h-1 w-6 bg-black mt-1 transition-transform transform"></div>
                     <div id="bar3"class="block h-1 w-6 bg-black mt-1 transition-transform transform"></div>
                 </div>
-                <div id="burger-links" class="hidden font-ropa text-lg flex flex-col absolute top-12 right-6 p-4 text-center bg-white rounded-lg gap-4" >
+                <div id="burger-links" class="hidden font-ropa text-lg flex flex-col absolute top-12 right-6 p-4 text-center bg-white rounded-lg gap-4 items-center" >
+                    <a href="#home"><img src="assets/home.png" class="w-5"></a>
                     <a href="#about" onclick="toggleMenu()">About</a>
                     <a href="#experience" onclick="toggleMenu()">Experience</a>
                     <a href="#projects" onclick="toggleMenu()">Projects</a>
@@ -78,20 +80,23 @@
         </section>
 
         <section id="about" class="flex justify-center">
-            <div class="flex flex-col items-center ">
+            <div class="flex flex-col items-center">
                 <div class="mx-auto">
-                    <img src="assets/profile2.jpg" class="mx-auto w-40 h-46 rounded-2xl shadow-xl border border-4 border-white">
+                    <img src="assets/profile2.jpg" class="-m-5 mx-auto w-40 h-46 rounded-2xl shadow-xl border border-4 border-white">
                 </div>
-                <div class=" w-11/12">
-                    <p class="font-outfit text-sm text-center p-3 ">Hello world! I am a lifelong learner with a true passion in software development seeking to make a positive impact. <br/><br/>After graduating from CodingDojo's 3-stack Software Bootcamp and spending many hours freelancing/building real world projects, I truly feel I am now ready for employment.<br /><br />In my free time I enjoy competing in Brazilian Jiujitsu, studying Bitcoin, finance, and tinkering in coding projects. <br /><br /> Thank you for considering my portfolio. Let's discuss how my skills and persistence to succeed will align with the
-                    goals of your organization!</p>
+                <div class="m-2 p-2 w-11/12">
+                    <p class="font-outfit text-sm text-center p-3 ">Hello world! I am a lifelong learner with a passion for software development. <br/><br/>After graduating from CodingDojo's 3-stack Software Bootcamp and spending many hours freelancing/building real world projects, I am now ready for employment.<br /><br />In my free time I enjoy training Jiujitsu, studying Bitcoin, and tinkering in coding projects. <br /><br /> Thank you for considering my portfolio. Let's discuss how my skills and persistence to succeed will align with the
+                    goals of your organization.</p>
+                </div>
+                <div class=" w-16">
+                    <img src="assets/graduation.png">
                 </div>
             </div>
         </section>
 
         <section id="experience">
             <div>
-
+                <h1>Technical Experience</h1>
             </div>
         </section>
 
