@@ -67,6 +67,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+// for Technical Project page, toggle description and testimony
+
+
+
+
 // for Personal Project page, toggle description
 
 // document.addEventListener('DOMContentLoaded', function () {
