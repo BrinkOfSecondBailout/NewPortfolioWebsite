@@ -33,6 +33,10 @@
     font-family: 'Ropa Sans', sans-serif;
 }
 
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
 .auto-typed {
     width: 100%;
 }
@@ -54,7 +58,7 @@ body:before {
     background-color: #cfeaff;
 }
 
-#home , #about , #experience, #projects{
+#home , #about , #experience, #projects, #contact{
     height: 120vh;
 }
 
