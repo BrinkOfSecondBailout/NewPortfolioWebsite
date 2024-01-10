@@ -108,6 +108,36 @@ document.addEventListener('DOMContentLoaded', function () {
         toggleVisibility(bargainDiv, bargainDescDiv);
     })
 
+    const loveBirdDescLink = document.getElementById('lovebird-description-link');
+    const loveBirdDiv = document.getElementById('lovebird');
+    const loveBirdDescDiv = document.getElementById('lovebird-description');
+
+    loveBirdDescLink.addEventListener('click', function () {
+        toggleVisibility(loveBirdDescDiv, loveBirdDiv);
+    })
+
+    const loveBirdBackLink = document.getElementById('lovebird-back-link');
+    
+    loveBirdBackLink.addEventListener('click', function () {
+        toggleVisibility(loveBirdDiv, loveBirdDescDiv);
+    })
+
+    const foodhubDescLink = document.getElementById('foodhub-desc-link');
+    const foodhubDiv = document.getElementById('foodhub');
+    const foodHubDescDiv = document.getElementById('foodhub-description');
+
+    foodhubDescLink.addEventListener('click', function () {
+        toggleVisibility(foodHubDescDiv, foodhubDiv);
+    })
+
+    const foodhubBackLink = document.getElementById('foodhub-back-link');
+
+    foodhubBackLink.addEventListener('click', function () {
+        toggleVisibility(foodhubDiv, foodHubDescDiv)
+    })
+
+
+
     function toggleVisibility(showDiv, hideDiv) {
         showDiv.classList.remove('hidden');
         hideDiv.classList.add('hidden');
