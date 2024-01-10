@@ -37,6 +37,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.font-urbanist {
+    font-family: 'Urbanist', sans-serif;
+}
+
 .auto-typed {
     width: 100%;
 }
@@ -63,15 +67,19 @@ body:before {
 }
 
 #experience {
-    height: 140vh;
+    height: 160vh;
 }
 
 #projects {
     height: 300vh;
 }
 
-#about , #proficiency, #contact{
-    height: 120vh;
+#proficiency {
+    height: 200vh;
+}
+
+#about , #contact{
+    height: 130vh;
 }
 
 .html {
