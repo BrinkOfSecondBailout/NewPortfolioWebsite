@@ -69,8 +69,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // for Technical Project page, toggle description and testimony
 
+document.addEventListener('DOMContentLoaded', function () {
+    const descriptionLink = document.getElementById('description-link');
+    const testimonyLink = document.getElementById('testimony-link');
+    const descriptionDiv = document.getElementById('description');
+    const testimonyDiv = document.getElementById('testimony');
 
+    descriptionLink.addEventListener('click', function () {
+        toggleVisibility(descriptionDiv, testimonyDiv, testimonyLink, descriptionLink);
+    });
 
+    testimonyLink.addEventListener('click', function () {
+        toggleVisibility(testimonyDiv, descriptionDiv, descriptionLink, testimonyLink);
+    });
+
+    function toggleVisibility(showDiv, hideDiv, showLink, hideLink) {
+        showDiv.classList.remove('hidden');
+        hideDiv.classList.add('hidden');
+        showLink.classList.remove('hidden');
+        hideLink.classList.add('hidden');
+    }
+});
 
 // for Personal Project page, toggle description
 
