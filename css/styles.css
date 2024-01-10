@@ -62,12 +62,13 @@ body:before {
     background-color: #cfeaff;
 }
 
-.blue-background {
-    background-color: rgb(66, 66, 255);
-}
 
 #home {
     height: 100vh;
+}
+
+#about {
+    height: 135vh;
 }
 
 #experience {
@@ -84,9 +85,6 @@ body:before {
 
 #contact {
     height: 125vh;
-}
-#about {
-    height: 135vh;
 }
 
 .html {
