@@ -91,6 +91,60 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+// For Contact Form
+
+// const liveEndPoint = '/.netlify/functions';
+const liveEndPoint = 'http://localhost:3000'
+
+const contactForm = document.querySelector('#contact-form');
+
+let inputName = document.getElementById('name');
+let inputPhone = document.getElementById('phone');
+let inputEmail = document.getElementById('email');
+let inputCompany = document.getElementById('company');
+let inputMessage = document.getElementById('message');
+
+contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    let formData = {
+        name: inputName.value,
+        phone: inputPhone.value,
+        email: inputEmail.value,
+        company: inputCompany.value,
+        message: inputMessage.value,
+    };
+
+    console.log(formData);
+
+    try {
+        const response = await axios.post(`${liveEndPoint}/contact`, formData);
+
+        console.log(response.data);
+
+        if(response.data === 'success') {
+            alert('Email sent! Thank you for your inquiry!');
+            inputName.value = '';
+            inputPhone.value = '';
+            inputEmail.value = '';
+            inputCompany.value = '';
+            inputMessage.value = '';
+        } else {
+            alert('Something went wrong... please try again later');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Something went wrong... please try again later');
+    }
+});
+
+
+
+
+
+
+
+
 // for Personal Project page, toggle description
 
 // document.addEventListener('DOMContentLoaded', function () {
