@@ -66,7 +66,11 @@ body:before {
     height: 140vh;
 }
 
-#about , #projects, #proficiency, #contact{
+#projects {
+    height: 300vh;
+}
+
+#about , #proficiency, #contact{
     height: 120vh;
 }
 

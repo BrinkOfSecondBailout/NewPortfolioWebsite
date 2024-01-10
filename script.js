@@ -93,53 +93,53 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // for Personal Project page, toggle description
 
-document.addEventListener('DOMContentLoaded', function () {
-    const bargainDescLink = document.getElementById('bargain-desc-link')
-    const bargainDiv = document.getElementById('bargainhunt')
-    const bargainDescDiv = document.getElementById('bargain-description')
+// document.addEventListener('DOMContentLoaded', function () {
+//     const bargainDescLink = document.getElementById('bargain-desc-link')
+//     const bargainDiv = document.getElementById('bargainhunt')
+//     const bargainDescDiv = document.getElementById('bargain-description')
 
-    bargainDescLink.addEventListener('click', function () {
-        toggleVisibility(bargainDescDiv, bargainDiv);
-    })
+//     bargainDescLink.addEventListener('click', function () {
+//         toggleVisibility(bargainDescDiv, bargainDiv);
+//     })
 
-    const bargainBackLink = document.getElementById('bargain-back-link');
+//     const bargainBackLink = document.getElementById('bargain-back-link');
 
-    bargainBackLink.addEventListener('click', function () {
-        toggleVisibility(bargainDiv, bargainDescDiv);
-    })
+//     bargainBackLink.addEventListener('click', function () {
+//         toggleVisibility(bargainDiv, bargainDescDiv);
+//     })
 
-    const loveBirdDescLink = document.getElementById('lovebird-description-link');
-    const loveBirdDiv = document.getElementById('lovebird');
-    const loveBirdDescDiv = document.getElementById('lovebird-description');
+//     const loveBirdDescLink = document.getElementById('lovebird-description-link');
+//     const loveBirdDiv = document.getElementById('lovebird');
+//     const loveBirdDescDiv = document.getElementById('lovebird-description');
 
-    loveBirdDescLink.addEventListener('click', function () {
-        toggleVisibility(loveBirdDescDiv, loveBirdDiv);
-    })
+//     loveBirdDescLink.addEventListener('click', function () {
+//         toggleVisibility(loveBirdDescDiv, loveBirdDiv);
+//     })
 
-    const loveBirdBackLink = document.getElementById('lovebird-back-link');
+//     const loveBirdBackLink = document.getElementById('lovebird-back-link');
     
-    loveBirdBackLink.addEventListener('click', function () {
-        toggleVisibility(loveBirdDiv, loveBirdDescDiv);
-    })
+//     loveBirdBackLink.addEventListener('click', function () {
+//         toggleVisibility(loveBirdDiv, loveBirdDescDiv);
+//     })
 
-    const foodhubDescLink = document.getElementById('foodhub-desc-link');
-    const foodhubDiv = document.getElementById('foodhub');
-    const foodHubDescDiv = document.getElementById('foodhub-description');
+//     const foodhubDescLink = document.getElementById('foodhub-desc-link');
+//     const foodhubDiv = document.getElementById('foodhub');
+//     const foodHubDescDiv = document.getElementById('foodhub-description');
 
-    foodhubDescLink.addEventListener('click', function () {
-        toggleVisibility(foodHubDescDiv, foodhubDiv);
-    })
+//     foodhubDescLink.addEventListener('click', function () {
+//         toggleVisibility(foodHubDescDiv, foodhubDiv);
+//     })
 
-    const foodhubBackLink = document.getElementById('foodhub-back-link');
+//     const foodhubBackLink = document.getElementById('foodhub-back-link');
 
-    foodhubBackLink.addEventListener('click', function () {
-        toggleVisibility(foodhubDiv, foodHubDescDiv)
-    })
+//     foodhubBackLink.addEventListener('click', function () {
+//         toggleVisibility(foodhubDiv, foodHubDescDiv)
+//     })
 
 
 
-    function toggleVisibility(showDiv, hideDiv) {
-        showDiv.classList.remove('hidden');
-        hideDiv.classList.add('hidden');
-    }
-});
+//     function toggleVisibility(showDiv, hideDiv) {
+//         showDiv.classList.remove('hidden');
+//         hideDiv.classList.add('hidden');
+//     }
+// });
