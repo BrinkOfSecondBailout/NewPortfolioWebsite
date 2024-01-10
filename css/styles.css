@@ -58,7 +58,15 @@ body:before {
     background-color: #cfeaff;
 }
 
-#home , #about , #experience, #projects, #proficiency, #contact{
+#home {
+    height: 100vh;
+}
+
+#experience {
+    height: 140vh;
+}
+
+#about , #projects, #proficiency, #contact{
     height: 120vh;
 }
 
