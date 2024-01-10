@@ -93,6 +93,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // for Personal Project page, toggle description
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     const descriptionLinks = 
-// });
+document.addEventListener('DOMContentLoaded', function () {
+    const bargainDescLink = document.getElementById('bargain-desc-link')
+    const bargainDiv = document.getElementById('bargainhunt')
+    const bargainDescDiv = document.getElementById('bargain-description')
+
+    bargainDescLink.addEventListener('click', function () {
+        toggleVisibility(bargainDescDiv, bargainDiv);
+    })
+
+    const bargainBackLink = document.getElementById('bargain-back-link');
+
+    bargainBackLink.addEventListener('click', function () {
+        toggleVisibility(bargainDiv, bargainDescDiv);
+    })
+
+    function toggleVisibility(showDiv, hideDiv) {
+        showDiv.classList.remove('hidden');
+        hideDiv.classList.add('hidden');
+    }
+});
