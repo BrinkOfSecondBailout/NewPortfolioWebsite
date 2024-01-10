@@ -62,6 +62,10 @@ body:before {
     background-color: #cfeaff;
 }
 
+.blue-background {
+    background-color: rgb(66, 66, 255);
+}
+
 #home {
     height: 100vh;
 }

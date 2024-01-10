@@ -311,40 +311,68 @@
 
                 <div class="mt-8">
                     <form id='contact-form' class="p-4 max-w-md mx-auto bg-white shadow-md rounded-lg">
-                        <p class="text-red-500 text-sm">* required fields</p>
+                        <p class="text-red-500 text-sm flex justify-center">* required fields</p>
                         <div class="mt-3 mb-4">
-                            <label for="name" class="block text-sm font-medium text-gray-600">Full Name: *</label>
-                            <input type="text" id="name" placeholder="John Wick Doe"  class="mt-1 p-2 w-full border border-gray-300 rounded-md" required></br>
+                            <label for="name" class="flex justify-center text-sm font-medium text-gray-600">Full Name: *</label>
+                            <input type="text" id="name" placeholder="John Wick"  class="mt-1 p-2 w-full border border-gray-300 rounded-md" required></br>
                         </div>
                             
                         <div class="mb-4">
-                            <label for="phone" class="block text-sm font-medium text-gray-600">Phone:</label>
+                            <label for="phone" class="flex justify-center text-sm font-medium text-gray-600">Phone:</label>
                             <input type="tel" id="phone" pattern="[0-9]{10}" placeholder="7145550000" class="mt-1 p-2 w-full border border-gray-300 rounded-md"></br>
                         </div>
 
                         <div class="mb-4">
-                            <label for="email" class="block text-sm font-medium text-gray-600">Email: *</label>
+                            <label for="email" class="flex justify-center text-sm font-medium text-gray-600">Email: *</label>
                             <input type="email" id="email" placeholder="john@gmail.com" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required></br>
                         </div>
 
                         <div class="mb-4">
-                            <label for="company" class="block text-sm font-medium text-gray-600">Company: *</label>
+                            <label for="company" class="flex justify-center text-sm font-medium text-gray-600">Company: *</label>
                             <input type="text" id="company" name="company" placeholder="Microsoft" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required></br>
                         </div>
 
                         <div class="mb-4">
-                            <label for="message" class="block text-sm font-medium text-gray-600">Message: *</label></br>
+                            <label for="message" class="flex justify-center text-sm font-medium text-gray-600">Message: *</label></br>
                             <textarea id="message" placeholder="Type message here..." class="-mt-3 p-2 w-full border border-gray-300 h-40 rounded-md resize-none" required></textarea></br>
                         </div>
 
-                        <div class="mb-4">
-                            <input type="submit" class="py-2 px-2 rounded-md cursor-pointer bg-blue-500 border" 
+                        <div class="mb-4 flex justify-center">
+                            <input type="submit" class="py-2 px-3 rounded-md cursor-pointer border-blue-500 border-2" 
                             value="Send Message">
                         </div>
                     </form>
                 </div>
             </div>
         </section>
+
+        <footer>
+            <nav>
+                <div class="">
+                    <div class="text-center">
+                        <div>
+                            <a href="#home">Home</a>
+                        </div>
+                        <div>
+                            <a href="#about">About</a>
+                        </div>
+                        <div>
+                            <a href="#experience">Experience</a>
+                        </div>
+                        <div>
+                            <a href="#projects">Projects</a>
+                        </div>
+                        <div>
+                            <a href="#proficiency">Proficiency</a>
+                        </div>
+                        <div>
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <p class="text-center">Copyright &#169; 2023 Danny Duong. All Rights Reserved.</p>
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
