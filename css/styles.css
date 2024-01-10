@@ -75,11 +75,11 @@ body:before {
 }
 
 #proficiency {
-    height: 200vh;
+    height: 160vh;
 }
 
 #about , #contact{
-    height: 130vh;
+    height: 135vh;
 }
 
 .html {
