@@ -65,6 +65,13 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    const contactLink = document.getElementById('contact-link');
+    contactLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetSection = '#contact';
+        scrollToTarget(targetSection);
+    });
+
 });
 
 // for Technical Project page, toggle description and testimony

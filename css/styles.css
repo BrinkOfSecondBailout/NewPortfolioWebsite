@@ -82,7 +82,10 @@ body:before {
     height: 160vh;
 }
 
-#about , #contact{
+#contact {
+    height: 125vh;
+}
+#about {
     height: 135vh;
 }
 
