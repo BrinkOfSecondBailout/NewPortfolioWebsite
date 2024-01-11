@@ -100,8 +100,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // For Contact Form
 
-// const liveEndPoint = '/.netlify/functions';
-const liveEndPoint = 'http://localhost:3000'
+const liveEndPoint = '/.netlify/functions';
+// const liveEndPoint = 'http://localhost:3000'
 
 const contactForm = document.querySelector('#contact-form');
 
@@ -129,7 +129,7 @@ contactForm.addEventListener('submit', async (e) => {
 
         console.log(response.data);
 
-        if(response.data === 'success') {
+        if(response.data.message === 'success') {
             alert('Email sent! Thank you for your inquiry!');
             inputName.value = '';
             inputPhone.value = '';
