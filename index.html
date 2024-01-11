@@ -46,11 +46,19 @@
         </div>
 
         <section id="home">
-            <div class="lg:flex  lg:w-2/3 lg:mt-14 lg:mx-auto">
-                <div id="profile-pic" class="w-52 h-52 mx-auto mt-24 md:w-56 lg:w-72" >
-                    <img src="assets/profile.png" class="rounded-full shadow-xl border-double border-4 border-blue-500">
+            <div class="lg:flex lg:w-2/3 lg:mt-14 lg:mx-auto">
+                <div id="profile-pic" class="w-52 h-52 mx-auto mt-24  " >
+                    <img src="assets/profile.png" class="rounded-full shadow-xl border-double border-4 border-blue-500 md:w-56 lg:w-80">
+                    <div class="hidden justify-center gap-3 mt-7 lg:flex">
+                        <div>
+                            <a href="https://github.com/BrinkOfSecondBailout" target="_blank"><img src="assets/github.png" class="w-10 lg:w-14"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/softwaredev-danny/" target="_blank"><img src="assets/linkedin.png" class="w-10 lg:w-14"></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="p-10 text-center md:mt-2 lg:flex lg:flex-col lg:text-center lg:gap-4 lg:mt-12">
+                <div class="p-10 text-center md:mt-2 lg:flex lg:flex-col lg:text-center lg:gap-4 lg:mt-20">
                     <div>
                         <h3 class="font-comfortaa font-bold text-sm md:text-lg lg:text-lg">Hi! My name is</h3>
                     </div>
@@ -69,7 +77,7 @@
                                 <button id="contact-link" class="p-2 w-28 lg:w-32">Contact</button>
                             </div>
                         </div>
-                        <div class="flex justify-center gap-3 mt-10">
+                        <div class="flex justify-center gap-3 mt-10 lg:hidden">
                             <div>
                                 <a href="https://github.com/BrinkOfSecondBailout" target="_blank"><img src="assets/github.png" class="w-10 lg:w-14"></a>
                             </div>
@@ -118,7 +126,7 @@
                     <div class="mt-10 lg:hidden">
                         <img src="assets/wave-gif.gif" class="w-10 md:w-12">
                     </div>
-                    <div class=" p-2 md:w-3/4 lg:flex-1 ">
+                    <div class=" p-2  md:w-3/4 lg:flex-1 ">
                         
                         <p class="font-outfit text-base text-center p-3 ">Hello world! I am a lifelong learner with a passion for software development. <br/><br/>After graduating from CodingDojo's 3-stack Software Bootcamp and spending many hours freelancing/building real world projects, I am now ready for employment.<br /><br />In my free time I enjoy training/competing Jiujitsu, studying Bitcoin, finance, and tinkering in side coding projects. <br /><br /> Thank you for considering my portfolio.<br> Let's discuss how my skills and persistence to succeed will align with the
                         goals of your organization.</p>
@@ -136,7 +144,7 @@
         <section id="experience">
             <div class="flex flex-col  items-center -mt-4">
                 <div class="flex justify-center">
-                    <h1 class="w-2/3  text-center  font-urbanist text-4xl font-bold md:w-full md:-mt-14 md:text-5xl lg:text-6xl">Technical Experience</h1>
+                    <h1 class="w-2/3  text-center  font-urbanist text-4xl font-bold md:w-full md:-mt-6 md:text-5xl lg:text-6xl">Technical Experience</h1>
                 </div>
                 <div id="description-link" class="hidden flex items-center mt-3 md:mt-3 lg:mt-8">
                     <a class="font-ropa text-md underline text-red-600 md:text-lg lg:text-xl">Application Description</a>
@@ -182,14 +190,14 @@
         <section id="projects" class="">
             <div class="flex flex-col items-center -mt-5 ">
                 <div>
-                    <h1 class="text-center font-urbanist text-4xl font-bold md:w-full md:-mt-14  md:text-5xl lg:text-6xl">Personal Projects</h1>
+                    <h1 class="text-center font-urbanist text-4xl font-bold md:w-full md:-mt-6  md:text-5xl lg:text-6xl">Personal Projects</h1>
                 </div>
 
                 <div class="flex flex-col items-center m-4 md:mt-6 lg:w-11/12">
 
                     <div class="md:w-10/12 lg:flex lg:gap-2 lg:p-4">
                         <div id="bargainhunt" class="flex p-2 mt-3 lg:flex-2 ">
-                            <img src="assets/bargain-gif.gif" class="h-52 rounded-lg shadow-lg border-2 border-white md:h-60 lg:h-72">
+                            <img src="assets/bargain-gif.gif" class="h-52 rounded-lg shadow-lg border-2 border-white md:h-60 lg:h-64">
                         </div>
                         <div id="bargain-description" class="font-outfit text-md text-center rounded-lg shadow-lg border-2 border-white p-3  lg:flex-1">
                             <h3 class="text-xl underline">Bargain Hunt</h3>
@@ -217,7 +225,7 @@
 
                     <div class="md:w-10/12 lg:flex lg:gap-2 lg:p-4">
                         <div id="foodhub" class="flex p-2 mt-6 md:mt-12 md:justify-center lg:flex-2 ">
-                            <img src="assets/foodhub-gif.gif" class="h-52 rounded-lg shadow-lg border-2 border-white md:h-60 lg:h-72">
+                            <img src="assets/foodhub-gif.gif" class="h-52 rounded-lg shadow-lg border-2 border-white md:h-60 lg:h-64">
                         </div>
                         <div id="foodhub-description" class="font-outfit text-md text-center rounded-lg shadow-lg border-2 border-white p-3 lg:flex-1">
                             <h3 class="text-xl underline">FoodHub</h3>
@@ -241,7 +249,7 @@
 
                     <div class="md:w-10/12 lg:flex lg:gap-2 lg:p-4">
                         <div id="lovebird" class="flex p-2 mt-6 md:mt-12 lg:flex-2">
-                            <img src="assets/lovebirds-gif.gif" class=" h-52 rounded-lg shadow-lg border-2 border-white md:h-60 lg:h-72">
+                            <img src="assets/lovebirds-gif.gif" class=" h-52 rounded-lg shadow-lg border-2 border-white md:h-60 lg:h-64">
                         </div>
                         <div id="lovebird-description" class="font-outfit text-md text-center rounded-lg shadow-lg border-2 border-white p-3  lg:flex-1">
                             <h3 class="text-xl underline">LoveBirds App</h3>
@@ -269,81 +277,133 @@
 
         <section id="proficiency" class="flex justify-center">
             <div class="flex flex-col items-center -mt-5 md:-mt-14">
-                <h1 class="text-center font-urbanist text-5xl font-bold ">Proficiency</h1>
-                <div class="flex ">
+                <h1 class="text-center font-urbanist text-5xl font-bold lg:text-6xl">Proficiency</h1>
+                <div class="flex lg:flex-col">
                     <div class="p-6 ">
                         <div>
-                            <h3 class="font-ropa text-xl text-center underline">Front End</h3>
+                            <h3 class="font-ropa text-xl text-center underline lg:text-2xl">Front End</h3>
                         </div>
-                        <div class="p-2 mt-4 mb-2">
-                            <img src="./assets/html.png" alt="HTML icon" class="w-14 mx-0 mx-auto" />
-                            <h3 class="font-teko text-xl text-center">HTML</h3>
-                        </div>
-                        <div class="p-2 mb-2">
-                            <img src="./assets/css.png" alt="CSS icon" class="w-14 mx-0 mx-auto" />
-                            <h3 class="font-teko text-xl text-center">CSS</h3>
-                        </div>
-                        <div class="p-2 mb-2">
-                            <img src="./assets/javascript.png" alt="JavaScript icon" class="w-16 mx-0 mx-auto" />
-                            <h3 class="font-teko text-xl text-center">JavaScript</h3>
-                        </div>
-                        <div class="p-2 mb-2">
-                            <img src="./assets/react.png" alt="React icon" class="w-14 mx-0 mx-auto" />
-                            <h3 class="font-teko text-xl text-center">React</h3>
-                        </div>
-                        <div class="p-2 mb-2">
-                            <img src="./assets/bootstrap.png" alt="Bootstrap icon" class="w-14 mx-0 mx-auto" />
-                            <h3 class="font-teko text-xl text-center">Bootstrap</h3>
-                        </div>
-                        <div class="p-2 mb-2">
-                            <img src="./assets/postman.png" alt="Postman icon" class="w-14 mx-0 mx-auto" />
-                            <h3 class="font-teko text-xl text-center">Postman</h3>
-                        </div>
-                        <div class="p-2 mb-2">
-                            <img src="./assets/vscode.png" alt="VS Code icon" class="w-14 mx-0 mx-auto" />
-                            <h3 class="font-teko text-xl text-center">VS Code</h3>
-                        </div>
-                        <div class="p-2 mb-2">
-                            <img src="./assets/git.png" alt="Git icon" class="w-14 mx-0 mx-auto" />
-                            <h3 class="font-teko text-xl text-center">Git</h3>
+                        <div class="lg:flex lg:justify-center lg:items-center ">
+                            <div class="p-2 mt-4 mb-2">
+                                <img src="./assets/html.png" alt="HTML icon" class="w-14 mx-0 mx-auto" />
+                                <div>
+                                    <h3 class="font-teko text-xl text-center">HTML</h3>
+                                </div>
+                            </div>
+                            <div class="p-2 mb-2">
+                                <img src="./assets/css.png" alt="CSS icon" class="w-14 mx-0 mx-auto" />
+                                <div>
+                                    <h3 class="font-teko text-xl text-center">CSS</h3>
+                                </div>
+                            </div>
+                            <div class="p-2 mb-2">
+                                <img src="./assets/javascript.png" alt="JavaScript icon" class="w-16 mx-0 mx-auto" />
+                                <div>
+                                    <h3 class="font-teko text-xl text-center">JavaScript</h3>
+                                </div>
+                            </div>
+                            <div class="p-2 mb-2">
+                                <img src="./assets/react.png" alt="React icon" class="w-14 mx-0 mx-auto" />
+                                <div>
+                                    <h3 class="font-teko text-xl text-center">React</h3>
+                                </div>
+                            </div>
+                            <div class="p-2 mb-2">
+                                <img src="./assets/bootstrap.png" alt="Bootstrap icon" class="w-14 mx-0 mx-auto" />
+                                <div>
+                                    <h3 class="font-teko text-xl text-center">Bootstrap</h3>
+                                </div>
+                            </div>
+                            <div class="p-2 mb-2">
+                                <img src="./assets/postman.png" alt="Postman icon" class="w-14 mx-0 mx-auto" />
+                                <div>
+                                    <h3 class="font-teko text-xl text-center">Postman</h3>
+                                </div>
+                            </div>
+                            <div class="p-2 mb-2">
+                                <img src="./assets/vscode.png" alt="VS Code icon" class="w-14 mx-0 mx-auto" />
+                                <div>
+                                    <h3 class="font-teko text-xl text-center">VS Code</h3>
+                                </div>
+                            </div>
+                            <div class="p-2 mb-2">
+                                <img src="./assets/git.png" alt="Git icon" class="w-14 mx-0 mx-auto" />
+                                <div>
+                                    <h3 class="font-teko text-xl text-center">Git</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="p-6">
                         <div>
-                            <h3 class="font-ropa text-xl text-center underline">Back End</h3>
+                            <h3 class="font-ropa text-xl text-center underline lg:text-2xl">Back End</h3>
                         </div>
-                        <div class="p-2 mt-4 mb-2">
-                            <img src="./assets/python.png" alt="Python icon" class="w-14 mx-0 mx-auto" />
-                            <h3 class="font-teko text-xl text-center">Python</h3>
-                        </div>
-                        <div class="p-2 mb-2">
-                            <img src="./assets/java.png" alt="Java icon" class="w-14 mx-0 mx-auto" />
-                            <h3 class="font-teko text-xl text-center">Java</h3>
-                        </div>
-                        <div class="p-2 mb-2">
-                            <img src="./assets/expressjs.png" alt="Express JS icon" class="w-14 mx-0 mx-auto" />
-                            <h3 class="font-teko text-xl text-center">Express JS</h3>
-                        </div>
-                        <div class="p-2 mb-2">
-                            <img src="./assets/flask.png" alt="Flask icon" class="w-14 mx-0 mx-auto" />
-                            <h3 class="font-teko text-xl text-center">Flask</h3>
-                        </div>
-                        <div class="p-2 mb-2">
-                            <img src="./assets/nodejs.png" alt="Node JS icon" class="w-14 mx-0 mx-auto" />
-                            <h3 class="font-teko text-xl text-center">Node JS</h3>
-                        </div>
-                        <div class="p-2 mb-2">
-                            <img src="./assets/spring.png" alt="Spring Boot icon" class="w-14 mx-0 mx-auto" />
-                            <h3 class="font-teko text-xl text-center">Spring Boot</h3>
-                        </div>
-                        <div class="p-2 mb-2">
-                            <img src="./assets/mysql.png" alt="MySQL icon" class="w-14 mx-0 mx-auto" />
-                            <h3 class="font-teko text-xl text-center">MySQL</h3>
-                        </div>
-                        <div class="p-2 mb-2">
-                            <img src="./assets/mongodb.png" alt="MongoDb icon" class="w-14 mx-0 mx-auto" />
-                            <h3 class="font-teko text-xl text-center">MongoDb</h3>
+                        <div class="lg:flex lg:justify-center lg:items-center">
+                            <div class="p-2 mt-4 mb-2">
+                                <div>
+                                    <img src="./assets/python.png" alt="Python icon" class="w-14 mx-0 mx-auto" />
+                                </div>
+                                <div>
+                                    <h3 class="font-teko text-xl text-center">Python</h3>
+                                </div>
+                            </div>
+                            <div class="p-2 mb-2">
+                                <div>
+                                    <img src="./assets/java.png" alt="Java icon" class="w-14 mx-0 mx-auto" />
+                                </div>
+                                <div>
+                                    <h3 class="font-teko text-xl text-center">Java</h3>
+                                </div>
+                            </div>
+                            <div class="p-2 mb-2">
+                                <div>
+                                    <img src="./assets/expressjs.png" alt="Express JS icon" class="w-14 mx-0 mx-auto" />
+                                </div>
+                                <div>
+                                    <h3 class="font-teko text-xl text-center">Express JS</h3>
+                                </div>
+                            </div>
+                            <div class="p-2 mb-2">
+                                <div>
+                                    <img src="./assets/flask.png" alt="Flask icon" class="w-14 mx-0 mx-auto" />
+                                </div>
+                                <div>
+                                    <h3 class="font-teko text-xl text-center">Flask</h3>
+                                </div>
+                            </div>
+                            <div class="p-2 mb-2">
+                                <div>
+                                    <img src="./assets/nodejs.png" alt="Node JS icon" class="w-14 mx-0 mx-auto" />
+                                </div>
+                                <div>
+                                    <h3 class="font-teko text-xl text-center">Node JS</h3>
+                                </div>
+                            </div>
+                            <div class="p-2 mb-2">
+                                <div>
+                                    <img src="./assets/spring.png" alt="Spring Boot icon" class="w-14 mx-0 mx-auto" />
+                                </div>
+                                <div>
+                                    <h3 class="font-teko text-xl text-center">Spring Boot</h3>
+                                </div>
+                            </div>
+                            <div class="p-2 mb-2">
+                                <div>
+                                    <img src="./assets/mysql.png" alt="MySQL icon" class="w-14 mx-0 mx-auto" />
+                                </div>
+                                <div>
+                                    <h3 class="font-teko text-xl text-center">MySQL</h3>
+                                </div>
+                            </div>
+                            <div class="p-2 mb-2">
+                                <div>
+                                    <img src="./assets/mongodb.png" alt="MongoDb icon" class="w-14 mx-0 mx-auto" />
+                                </div>
+                                <div>
+                                    <h3 class="font-teko text-xl text-center">MongoDb</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
