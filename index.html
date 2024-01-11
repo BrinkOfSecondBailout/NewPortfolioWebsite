@@ -16,8 +16,8 @@
     <div class="m-0 p-0 relative">
 
         <div id="top-bar" class=" hidden justify-between items-center p-4 skyblue fixed w-full top-0 z-10 md:flex">
-            <a href="#home"><div class="font-comfortaa text-2xl">danny.dev</div></a>
-            <div id="nav-links" class="font-ropa text-lg flex gap-3">
+            <a href="#home"><div class="font-comfortaa text-2xl lg:text-3xl">danny.dev</div></a>
+            <div id="nav-links" class="font-ropa text-lg flex gap-3 lg:gap-5 lg:text-xl">
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
@@ -47,10 +47,10 @@
 
         <section id="home">
             <div>
-                <div id="profile-pic" class="w-52 h-52 mx-auto mt-24 md:w-56" >
+                <div id="profile-pic" class="w-52 h-52 mx-auto mt-24 md:w-56 lg:w-60" >
                     <img src="assets/profile.png" class="rounded-full shadow-xl border-double border-4 border-blue-500">
                 </div>
-                <div class="p-10 text-center md:mt-2">
+                <div class="p-10 text-center md:mt-2 lg:mt-8">
                     <div>
                         <h3 class="font-comfortaa font-bold text-sm md:text-lg">Hi! My name is</h3>
                     </div>
@@ -62,40 +62,49 @@
                     </div>
                 </div>
                 <div class="flex justify-center gap-2 -mt-5 md:mt-1">
-                    <div class="border-2 border-black rounded-full font-ropa font-bold p-2">
-                        <button class="p-2 w-28" onclick="window.open('./assets/Danny_Resume.pdf')">Resume</button>
+                    <div class="border-2 border-black rounded-full font-ropa font-bold p-2 lg:text-lg">
+                        <button class="p-2 w-28 lg:w-32" onclick="window.open('./assets/Danny_Resume.pdf')">Resume</button>
                     </div>
-                    <div class="rounded-full font-ropa font-bold p-2 bg-gray-600 text-white">
-                        <button id="contact-link" class="p-2 w-28" >Contact</button>
+                    <div class="rounded-full font-ropa font-bold p-2 bg-gray-600 text-white lg:text-lg">
+                        <button id="contact-link" class="p-2 w-28 lg:w-32" >Contact</button>
                     </div>
                 </div>
                 <div class="flex justify-center gap-3 mt-5">
                     <div>
-                        <a href="https://github.com/BrinkOfSecondBailout" target="_blank"><img src="assets/github.png" class="w-10"></a>
+                        <a href="https://github.com/BrinkOfSecondBailout" target="_blank"><img src="assets/github.png" class="w-10 lg:w-14"></a>
                     </div>
                     <div>
-                        <a href="https://www.linkedin.com/in/softwaredev-danny/" target="_blank"><img src="assets/linkedin.png" class="w-10"></a>
+                        <a href="https://www.linkedin.com/in/softwaredev-danny/" target="_blank"><img src="assets/linkedin.png" class="w-10 lg:w-14"></a>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section id="about" class="flex justify-center">
-            <div class="flex flex-col items-center md:-mt-8">
-                <div class="mx-auto">
-                    <img src="assets/profile2.jpg" class="-m-5 mx-auto w-46 h-52 rounded-2xl shadow-xl border border-4 border-white md:w-52 md:h-64">
+        <section id="about" class="flex justify-center lg:flex-col lg:justify-start lg:items-center">
+            <h1 class="hidden font-urbanist text-6xl font-bold lg:flex lg:justify-center lg:-mt-14">About Me</h1>
+            <div class="hidden lg:flex lg:justify-center lg:mt-8">
+                <img src="assets/wave-gif.gif" class="w-14">
+            </div>
+            <div class="flex flex-col items-center -mt-2 md:-mt-16 lg:flex-row lg:w-10/12 lg:mt-6 ">
+                <h1 class="w-2/3  text-center  font-urbanist text-4xl font-bold md:w-full md:text-5xl lg:hidden">About Me</h1>
+                <div class="mt-10 mx-auto lg:flex-4">
+                    <img src="assets/profile2.jpg" class="-m-5 mx-auto w-46 h-52 rounded-2xl shadow-xl border border-4 border-white md:w-52 md:h-64 lg:w-64 lg:h-80 lg:-mt-16">
                 </div>
-                <div class="mt-10">
+                <div class="mt-10 lg:hidden">
                     <img src="assets/wave-gif.gif" class="w-10 md:w-12">
                 </div>
-                <div class=" p-2 md:w-3/4">
+                <div class=" p-2 md:w-3/4 lg:flex-1 ">
+                    
                     <p class="font-outfit text-md text-center p-3 ">Hello world! I am a lifelong learner with a passion for software development. <br/><br/>After graduating from CodingDojo's 3-stack Software Bootcamp and spending many hours freelancing/building real world projects, I am now ready for employment.<br /><br />In my free time I enjoy training/competing Jiujitsu, studying Bitcoin, finance, and tinkering in side coding projects. <br /><br /> Thank you for considering my portfolio.<br> Let's discuss how my skills and persistence to succeed will align with the
                     goals of your organization.</p>
+                    <div class="hidden lg:flex justify-center">
+                        <img src="assets/graduation2.png" class="w-20">
+                    </div>
                 </div>
-                <div class="mt-1">
+                <div class="mt-1 lg:hidden">
                     <img src="assets/graduation2.png" class="w-20">
                 </div>
             </div>
+            
         </section>
 
         <section id="experience" class="flex justify-center">
@@ -128,27 +137,26 @@
                     <p class="font-outfit text-base font-bold text-center w-10/12 p-1 md:text-lg md:mt-3">HTML | CSS | JavaScript | Node.js</p>
                 </div>
                 <div class="flex justify-center p-1 ">
-                    <img src="assets/delgato-gif.gif" class="rounded-lg h-44">
+                    <img src="assets/delgato-gif.gif" class="rounded-lg h-44 md:h-52 ">
                 </div>
                 <div class="mt-5">
-                    <a href="https://github.com/BrinkOfSecondBailout/Del-Gato-Rescue" target="_blank"><button class="border-2 border-gray-400 bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1">Github</button></a>
-                    <a href="http://delgatorescue.org" target="_blank"><button class="border-2 border-gray-400 bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1">Live</button></a>
+                    <a href="https://github.com/BrinkOfSecondBailout/Del-Gato-Rescue" target="_blank"><button class="border-2 border-gray-400 bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base">Github</button></a>
+                    <a href="http://delgatorescue.org" target="_blank"><button class="border-2 border-gray-400 bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base">Live</button></a>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="flex justify-center">
-            <div class="flex flex-col items-center -mt-5">
+            <div class="flex flex-col items-center -mt-5 md:-mt-14">
                 <div>
-                    <h1 class="text-center font-urbanist text-4xl font-bold">Personal Projects</h1>
+                    <h1 class="text-center font-urbanist text-4xl font-bold md:w-full md:text-5xl">Personal Projects</h1>
                 </div>
-                <div class="flex flex-col items-center m-4">
-
+                <div class="flex flex-col items-center m-4 md:mt-8">
 
                     <div id="bargainhunt" class="flex p-2 mt-3">
-                        <img src="assets/bargain-gif.gif" class="h-52 rounded-lg shadow-lg border-2 border-white">
+                        <img src="assets/bargain-gif.gif" class="h-52 rounded-lg shadow-lg border-2 border-white md:h-60">
                     </div>
-                    <div id="bargain-description" class="font-outfit text-md text-center w-11/12 w-44 rounded-lg shadow-lg border-2 border-white p-3">
+                    <div id="bargain-description" class="font-outfit text-md text-center w-11/12 w-44 rounded-lg shadow-lg border-2 border-white p-3 md:w-10/12">
                         <h3 class="text-xl underline">Bargain Hunt</h3>
                         <p class="mt-2">Sign up, upload pictures and post items for sell.</p>
                         <p>Add items to cart and watchlist before purchasing.</p>
@@ -160,18 +168,18 @@
                     </div>
                     <div>
                         <div class="flex p-2 mt-2 gap-1">
-                            <a href="https://github.com/BrinkOfSecondBailout/BargainHunt" target="_blank"><button class="border-2 border-gray-400 bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1">Github</button></a>
-                            <a href="http://54.213.192.7/" target="_blank"><button class="border-2 border-gray-400 bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1">Live</button></a>
+                            <a href="https://github.com/BrinkOfSecondBailout/BargainHunt" target="_blank"><button class="border-2 border-gray-400 bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base">Github</button></a>
+                            <a href="http://54.213.192.7/" target="_blank"><button class="border-2 border-gray-400 bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base">Live</button></a>
                         </div>
                     </div>
 
 
 
-                    <div id="foodhub" class="flex p-2 mt-6">
-                        <img src="assets/foodhub-gif.gif" class="h-52 rounded-lg shadow-lg border-2 border-white">
+                    <div id="foodhub" class="flex p-2 mt-6 md:mt-12">
+                        <img src="assets/foodhub-gif.gif" class="h-52 rounded-lg shadow-lg border-2 border-white md:h-60">
                     </div>
                     <div id="foodhub-description"
-                        class="font-outfit text-md text-center w-11/12 w-44 rounded-lg shadow-lg border-2 border-white p-3">
+                        class="font-outfit text-md text-center w-11/12 w-44 rounded-lg shadow-lg border-2 border-white p-3 md:w-10/12">
                         <h3 class="text-xl underline">FoodHub</h3>
                         <p class="mt-2">Sign up and see what other hungry eaters are raving about.</p>
                         <p>Restaurants and users can upload images to be saved to database.</p>
@@ -183,16 +191,16 @@
                     </div>
                     <div class="flex p-2 mt-2 gap-1">
                         <a href="https://github.com/BrinkOfSecondBailout/FoodHub" target="_blank"><button
-                                class="border-2 border-gray-400 bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1">Github</button></a>
+                                class="border-2 border-gray-400 bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base">Github</button></a>
                         <a href="http://34.219.142.108/" target="_blank"><button
-                                class="border-2 border-gray-400 bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1">Live</button></a>
+                                class="border-2 border-gray-400 bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base">Live</button></a>
                     </div>
 
 
-                    <div id="lovebird" class="flex p-2 mt-6">
-                        <img src="assets/lovebirds-gif.gif" class=" h-52 rounded-lg shadow-lg border-2 border-white">
+                    <div id="lovebird" class="flex p-2 mt-6 md:mt-12">
+                        <img src="assets/lovebirds-gif.gif" class=" h-52 rounded-lg shadow-lg border-2 border-white md:h-60">
                     </div>
-                    <div id="lovebird-description" class="font-outfit text-md text-center w-11/12 w-44 rounded-lg shadow-lg border-2 border-white p-3">
+                    <div id="lovebird-description" class="font-outfit text-md text-center w-11/12 w-44 rounded-lg shadow-lg border-2 border-white p-3 md:w-10/12">
                         <h3 class="text-xl underline">LoveBirds App</h3>
                         <p class="mt-2">Sign up, upload pictures and browse other lovebirds.</p>
                         <p>Send and receive "hearts". If matched, start messaging.</p>
@@ -203,22 +211,19 @@
                         <p class="font-bold p-1 mt-2">Python | Flask | MySQL | SqlAlchemy</p>
                     </div>
                     <div class="flex p-2 mt-2 gap-1">
-                        <a href="https://github.com/BrinkOfSecondBailout/LoveBirdsApp" target="_blank"><button class="border-2 border-gray-400 bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1">Github</button></a>
-                        <a href="http://34.215.117.207/" target="_blank"><button class="border-2 border-gray-400 bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1">Live</button></a>
+                        <a href="https://github.com/BrinkOfSecondBailout/LoveBirdsApp" target="_blank"><button class="border-2 border-gray-400 bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base">Github</button></a>
+                        <a href="http://34.215.117.207/" target="_blank"><button class="border-2 border-gray-400 bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base">Live</button></a>
                     </div>
-
-
-
 
                 </div>
             </div>
         </section>
 
         <section id="proficiency" class="flex justify-center">
-            <div class="flex flex-col items-center -mt-5">
-                <h1 class="text-center font-urbanist text-5xl font-bold">Proficiency</h1>
-                <div class="flex">
-                    <div class="p-6">
+            <div class="flex flex-col items-center -mt-5 md:-mt-14">
+                <h1 class="text-center font-urbanist text-5xl font-bold ">Proficiency</h1>
+                <div class="flex ">
+                    <div class="p-6 ">
                         <div>
                             <h3 class="font-ropa text-xl text-center underline">Front End</h3>
                         </div>
@@ -298,41 +303,41 @@
         </section>
 
         <section id="contact" class="flex justify-center">
-            <div class="flex flex-col items-center -mt-5">
-                <h1 class="text-center font-urbanist text-4xl font-bold">Contact Me</h1>
-                <div class="flex items-center p-2 gap-2 mt-4">
-                    <img src="assets/email2.png" class="w-9" alt="Email">
-                    <p class="font-outfit">nguyenduongpa@gmail.com</p>
+            <div class="flex flex-col items-center -mt-5 md:-mt-16">
+                <h1 class="text-center font-urbanist text-4xl font-bold md:text-6xl">Contact Me</h1>
+                <div class="flex items-center p-2 gap-2 mt-4 md:mt-6">
+                    <img src="assets/email2.png" class="w-9 md:w-10" alt="Email">
+                    <p class="font-outfit md:text-lg">nguyenduongpa@gmail.com</p>
                 </div>
                 <div class="flex items-center mt-1">
-                    <a href="https://www.linkedin.com/in/softwaredev-danny/" target="_blank"><img src="assets/linkedin-full.png" class="w-20" alt="Linkedin"></a>
+                    <a href="https://www.linkedin.com/in/softwaredev-danny/" target="_blank"><img src="assets/linkedin-full.png" class="w-20 md:w-24" alt="Linkedin"></a>
                 </div>
 
-                <div class="mt-8">
-                    <form id='contact-form' class="p-4 max-w-md mx-auto bg-white shadow-md rounded-lg">
+                <div class="mt-8 md:mt-10 md:w-11/12">
+                    <form id='contact-form' class="p-4 mx-auto bg-white shadow-md rounded-lg">
                         <p class="text-red-500 text-sm flex justify-center">* required fields</p>
                         <div class="mt-3 mb-4">
-                            <label for="name" class="flex justify-center text-sm font-medium text-gray-600">Full Name: *</label>
+                            <label for="name" class="flex justify-center text-sm font-medium text-gray-600 md:text-lg">Full Name: *</label>
                             <input type="text" id="name" placeholder="John Wick"  class="mt-1 p-2 w-full border border-gray-300 rounded-md" required></br>
                         </div>
                             
                         <div class="mb-4">
-                            <label for="phone" class="flex justify-center text-sm font-medium text-gray-600">Phone:</label>
+                            <label for="phone" class="flex justify-center text-sm font-medium text-gray-600 md:text-lg">Phone:</label>
                             <input type="tel" id="phone" pattern="[0-9]{10}" placeholder="7145550000" class="mt-1 p-2 w-full border border-gray-300 rounded-md"></br>
                         </div>
 
                         <div class="mb-4">
-                            <label for="email" class="flex justify-center text-sm font-medium text-gray-600">Email: *</label>
+                            <label for="email" class="flex justify-center text-sm font-medium text-gray-600 md:text-lg">Email: *</label>
                             <input type="email" id="email" placeholder="john@gmail.com" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required></br>
                         </div>
 
                         <div class="mb-4">
-                            <label for="company" class="flex justify-center text-sm font-medium text-gray-600">Company: *</label>
+                            <label for="company" class="flex justify-center text-sm font-medium text-gray-600 md:text-lg">Company: *</label>
                             <input type="text" id="company" name="company" placeholder="Microsoft" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required></br>
                         </div>
 
                         <div class="mb-4">
-                            <label for="message" class="flex justify-center text-sm font-medium text-gray-600">Message: *</label></br>
+                            <label for="message" class="flex justify-center text-sm font-medium text-gray-600 md:text-lg">Message: *</label></br>
                             <textarea id="message" placeholder="Type message here..." class="-mt-3 p-2 w-full border border-gray-300 h-40 rounded-md resize-none" required></textarea></br>
                         </div>
 
