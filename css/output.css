@@ -588,29 +588,33 @@ video {
   width: 100%;
 }
 
-body:before {
-  content: "";
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -10;
-  background: url(/assets/sky-bg2.jpg) no-repeat center center;
-  background-size: cover;
+/* body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(/assets/sky-bg2.jpg) no-repeat center center;
+    background-size: cover;
+} */
+
+body {
+  background-color: #96d4fc;
 }
 
 .skyblue {
-  background-color: #cfeaff;
-}
-
-.blue-background {
-  background-color: rgb(66, 66, 255);
+  background-color: #ffffff;
 }
 
 #home {
   height: 100vh;
+}
+
+#about {
+  height: 135vh;
 }
 
 #experience {
@@ -625,12 +629,121 @@ body:before {
   height: 160vh;
 }
 
-#about , #contact{
-  height: 135vh;
+#contact {
+  height: 125vh;
 }
 
 .html {
   scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b6b6b6;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.15);
+  transition: transform 0.3s ease;
+}
+
+.underline-effect {
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.underline-effect::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(62, 191, 255, 0.8);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.underline-effect:hover {
+  color: rgba(62, 191, 255, 0.8);
+}
+
+.underline-effect:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.grey-effect:hover {
+  cursor: pointer;
+  background: rgb(24, 24, 24);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.black-effect:hover {
+  cursor: pointer;
+  background: rgb(24, 24, 24);
+  transition: all 0.5s ease;
+}
+
+.pill-effect {
+  overflow: hidden;
+  position: relative;
+  transition: 0.4s;
+}
+
+.pill-effect:hover {
+  background: rgb(186, 186, 186);
+  color: white;
+  box-shadow: 0 0 10px rgb(186, 186, 186), 0 0 20px rgb(186, 186, 186), 0 0 40px rgb(186, 186, 186);
+}
+
+.pill-effect-blue {
+  overflow: hidden;
+  position: relative;
+  transition: 0.4s;
+}
+
+.pill-effect-blue:hover {
+  background: rgb(19, 125, 255);
+  color: white;
+  box-shadow: 0 0 10px rgb(19, 125, 255), 0 0 20px rgb(19, 125, 255), 0 0 40px rgb(19, 125, 255);
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-color: #3498db;
+    /* Initial border color */
+  }
+
+  50% {
+    border-color: #ffffff;
+    /* Midway border color */
+  }
+
+  100% {
+    border-color: #3498db;
+    /* Final border color */
+  }
+}
+
+.border-animation {
+  animation: borderAnimation 4s infinite;
 }
 
 

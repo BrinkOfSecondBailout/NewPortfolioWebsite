@@ -45,7 +45,7 @@
     width: 100%;
 }
 
-body:before {
+/* body:before {
     content: "";
     display: block;
     position: fixed;
@@ -56,10 +56,15 @@ body:before {
     z-index: -10;
     background: url(/assets/sky-bg2.jpg) no-repeat center center;
     background-size: cover;
+} */
+
+body {
+    background-color: #96d4fc;
 }
 
+
 .skyblue {
-    background-color: #cfeaff;
+    background-color: #ffffff;
 }
 
 
@@ -177,3 +182,27 @@ body:before {
     color: white;
     box-shadow: 0 0 10px rgb(19, 125, 255), 0 0 20px rgb(19, 125, 255), 0 0 40px rgb(19, 125, 255);
 }
+
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #3498db;
+        /* Initial border color */
+    }
+
+    50% {
+        border-color: #ffffff;
+        /* Midway border color */
+    }
+
+    100% {
+        border-color: #3498db;
+        /* Final border color */
+    }
+}
+
+.border-animation {
+    animation: borderAnimation 4s infinite;
+}
+
+
