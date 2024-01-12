@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +12,14 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/output.css">
 </head>
-<body>
+<body class= "light ">
     <div class="m-0 p-0 relative">
 
+
+
+
         <div id="top-bar">
-            <div class=" hidden justify-between items-center p-4 skyblue fixed w-full top-0 z-10 md:flex ">
+            <div class="top-bar-div hidden justify-between items-center p-4 skyblue fixed w-full top-0 z-10 md:flex ">
                 <a href="#home" class="xl:hidden">
                     <div class="font-comfortaa text-2xl lg:text-3xl xl:text-4xl">danny.dev</div>
                 </a>
@@ -26,8 +29,9 @@
                     <a class="underline-effect" href="#projects">Projects</a>
                     <a class="underline-effect" href="#proficiency">Proficiency</a>
                     <a class="underline-effect" href="#contact">Contact</a>
+                    <button id="toggleDarkModeLg"><img id="mode-icon-lg" src="assets/dark-mode.png" alt="Dark Mode" class="w-16"></button>
                 </div>
-                <div class="hidden xl:flex xl:justify-between xl:items-center xl:w-5/6 xl:mx-auto">
+                <div class=" hidden xl:flex xl:justify-between xl:items-center xl:w-5/6 xl:mx-auto">
                     <a href="#home"><div class="font-comfortaa text-2xl lg:text-3xl xl:text-4xl">danny.dev</div></a>
                     <div id="nav-links" class="font-ropa text-lg flex gap-3 lg:gap-5 lg:text-xl xl:text-2xl">
                         <a class="underline-effect" href="#about">About</a>
@@ -35,12 +39,13 @@
                         <a class="underline-effect" href="#projects">Projects</a>
                         <a class="underline-effect" href="#proficiency">Proficiency</a>
                         <a class="underline-effect"href="#contact">Contact</a>
+                        <button id="toggleDarkModeXl"><img id="mode-icon-xl" src="assets/dark-mode.png" alt="Dark Mode" class="w-16"></button>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div id="top-bar" class="skyblue flex justify-between items-center p-4 md:hidden fixed w-full top-0 z-10 ">
+        <div id="top-bar" class="top-bar-div skyblue flex justify-between items-center p-4 md:hidden fixed w-full top-0 z-10 ">
             <a href="#home"><div class="font-comfortaa text-xl">danny.dev</div></a>
             <div class="" id="hamburger-icon">
                 <div class="cursor-pointer" onclick="toggleMenu">
@@ -48,27 +53,41 @@
                     <div id="bar2" class="block h-1 w-6 bg-black mt-1 transition-transform transform"></div>
                     <div id="bar3"class="block h-1 w-6 bg-black mt-1 transition-transform transform"></div>
                 </div>
-                <div id="burger-links" class="hidden font-ropa text-lg flex flex-col absolute top-12 right-6 p-4 text-center bg-white rounded-lg gap-4 items-center" >
+                <div id="burger-links" class="pill-button hidden font-ropa text-lg flex flex-col absolute top-12 right-6 p-4 text-center bg-white rounded-lg gap-4 items-center" >
                     <a href="#home"><img src="assets/home.png" class="w-5"></a>
                     <a href="#about" onclick="toggleMenu()">About</a>
                     <a href="#experience" onclick="toggleMenu()">Experience</a>
                     <a href="#projects" onclick="toggleMenu()">Projects</a>
                     <a href="#proficiency" onclick="toggleMenu()">Proficiency</a>
                     <a href="#contact" onclick="toggleMenu()">Contact</a>
+                    <button id="toggleDarkModeSm"><img id="mode-icon-sm" src="assets/dark-mode.png" alt="Dark Mode" class="w-12"></button>
                 </div>
             </div>
         </div>
+
+
+
+
+
 
         <section id="home">
             <div class="lg:flex lg:w-2/3 lg:mt-14 lg:mx-auto 2xl:w-1/2 2xl:items-center">
                 <div id="profile-pic" class="w-52 h-52 mx-auto mt-24  xl:w-96 2xl:-mt-2 2xl:flex 2xl:flex-col 2xl:items-center">
                     <img src="assets/profile.png" class="rounded-full shadow-xl border-4 border-blue-500 md:w-56 lg:w-80 border-animation">
-                    <div class="hidden justify-center gap-3 mt-7 lg:flex ">
+                    <div id="light-mode-icons-lg" class="hidden justify-center gap-3 mt-7 lg:flex ">
                         <div>
                             <a href="https://github.com/BrinkOfSecondBailout" target="_blank"><img src="assets/github.png" class="w-10 lg:w-14 xl:w-16 zoom-effect"></a>
                         </div>
                         <div>
                             <a href="https://www.linkedin.com/in/softwaredev-danny/" target="_blank"><img src="assets/linkedin.png" class="w-10 lg:w-14 xl:w-16 zoom-effect"></a>
+                        </div>
+                    </div>
+                    <div id="dark-mode-icons-lg" class="hidden justify-center gap-3 mt-7  ">
+                        <div>
+                            <a href="https://github.com/BrinkOfSecondBailout" target="_blank"><img src="assets/github-blue.png" class="w-10 lg:w-14 xl:w-16 zoom-effect"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/softwaredev-danny/" target="_blank"><img src="assets/linkedin-blue-icon.png" class="w-10 lg:w-14 xl:w-16 zoom-effect"></a>
                         </div>
                     </div>
                 </div>
@@ -77,7 +96,7 @@
                         <h3 class="font-comfortaa font-bold text-sm md:text-lg lg:text-lg xl:text-2xl xl:mt-3 ">Hi! My name is</h3>
                     </div>
                     <div>
-                        <h1 class="text-white font-outfit text-5xl tracking-widest p-1 md:text-6xl 2xl:text-7xl">Danny</h1>
+                        <h1 id="danny" class="text-white font-outfit text-5xl tracking-widest p-1 md:text-6xl 2xl:text-7xl">Danny</h1>
                     </div>
                     <div>
                         <h2 class="font-comfortaa font-bold text-md mt-4 md:text-lg  xl:text-2xl"><span class="auto-typed"></span></h2>
@@ -85,7 +104,7 @@
                     <div class="hidden lg:flex lg:flex-col ">
                         <div class="flex justify-center gap-2 mt-7">
                             <div class="bg-gray-200 border-2 border-black rounded-full font-ropa font-bold p-2 lg:text-lg xl:text-2xl grey-effect">
-                                <button class="p-2 w-28 lg:w-32 xl:w-36 " onclick="window.open('./assets/Danny_Resume.pdf')">Resume</button>
+                                <button class="pill-button p-2 w-28 lg:w-32 xl:w-36 " onclick="window.open('./assets/Danny_Resume.pdf')">Resume</button>
                             </div>
                             <div class="rounded-full font-ropa font-bold p-2 bg-gray-600 text-white lg:text-lg  xl:text-2xl black-effect">
                                 <button id="contact-link" class="p-2 w-28 lg:w-32 xl:w-36 ">Contact</button>
@@ -104,18 +123,28 @@
                 <div class="lg:hidden">
                     <div class="flex justify-center gap-2 -mt-5 md:-mt-2">
                         <div class="bg-gray-200 border-2 border-black rounded-full font-ropa font-bold p-2 lg:text-lg">
-                            <button class="p-2 w-28 lg:w-32" onclick="window.open('./assets/Danny_Resume.pdf')">Resume</button>
+                            <button class="pill-button p-2 w-28 lg:w-32" onclick="window.open('./assets/Danny_Resume.pdf')">Resume</button>
                         </div>
                         <div class="rounded-full font-ropa font-bold p-2 bg-gray-600 text-white lg:text-lg">
                             <button id="contact-link" class="p-2 w-28 lg:w-32" >Contact</button>
                         </div>
                     </div>
-                    <div class="flex justify-center gap-3 mt-5">
+                    <div id="light-mode-icons-md" class="flex justify-center gap-3 mt-5">
                         <div>
                             <a href="https://github.com/BrinkOfSecondBailout" target="_blank"><img src="assets/github.png" class="w-10 lg:w-14"></a>
                         </div>
                         <div>
                             <a href="https://www.linkedin.com/in/softwaredev-danny/" target="_blank"><img src="assets/linkedin.png" class="w-10 lg:w-14"></a>
+                        </div>
+                    </div>
+                    <div id="dark-mode-icons-md" class="hidden justify-center gap-3 mt-5">
+                        <div>
+                            <a href="https://github.com/BrinkOfSecondBailout" target="_blank"><img src="assets/github-blue.png"
+                                    class="w-10 lg:w-14"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/softwaredev-danny/" target="_blank"><img
+                                    src="assets/linkedin-blue-icon.png" class="w-10 lg:w-14"></a>
                         </div>
                     </div>
                 </div>
@@ -134,8 +163,8 @@
                 </div>
                 <div class="flex flex-col items-center -mt-2 md:-mt-16 lg:flex-row lg:w-10/12 lg:mt-6 2xl:w-1/2">
                     <h1 class="w-2/3  text-center  font-urbanist text-4xl font-bold md:w-full md:text-5xl lg:hidden">About Me</h1>
-                    <div class="mt-10 mx-auto lg:flex-4 2xl:-mt-2  ">
-                        <img src="assets/profile2.jpg" class="-m-5 mx-auto w-46 h-52 rounded-2xl shadow-xl border border-4 border-white md:w-52 md:h-64 lg:w-64 lg:h-80 lg:-mt-16 2xl:w-72 ">
+                    <div class="mt-10 mx-auto lg:flex-4 2xl:-mt-2">
+                        <img src="assets/profile2.jpg" class="-m-5 mx-auto w-46 h-52 rounded-2xl shadow-xl border border-4 border-white md:w-52 md:h-64 lg:w-64 lg:h-80 lg:-mt-16 2xl:w-72">
                     </div>
                     <div class="mt-10 lg:hidden">
                         <img src="assets/wave-gif.gif" class="w-10 md:w-12">
@@ -197,13 +226,18 @@
                             <img src="assets/delgato-gif.gif" class="rounded-lg h-44 md:h-52 xl:h-64">
                         </div>
                         <div class="mt-5">
-                            <a href="https://github.com/BrinkOfSecondBailout/Del-Gato-Rescue" target="_blank"><button class="border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Github</button></a>
-                            <a href="http://delgatorescue.org" target="_blank"><button class="border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Live</button></a>
+                            <a href="https://github.com/BrinkOfSecondBailout/Del-Gato-Rescue" target="_blank"><button class="pill-button border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Github</button></a>
+                            <a href="http://delgatorescue.org" target="_blank"><button class="pill-button border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Live</button></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
+
+
+
 
         <section id="projects" class="">
             <div class="flex flex-col items-center -mt-5 2xl:w-3/4 2xl:mx-auto">
@@ -228,15 +262,15 @@
                             <p class="font-bold p-1 mt-2">MongoDb | Express | React | NodeJS</p>
                             <div class="hidden p-2 mt-2 gap-1 lg:flex lg:justify-center">
                                 <a href="https://github.com/BrinkOfSecondBailout/BargainHunt" target="_blank"><button
-                                class="border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Github</button></a>
+                                class="pill-button border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Github</button></a>
                                 <a href="http://54.213.192.7/" target="_blank"><button
-                                class="border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Live</button></a>
+                                class="pill-button border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Live</button></a>
                             </div>
                         </div>
                         <div>
                             <div class="flex justify-center p-2 mt-2 gap-1 lg:hidden">
-                                <a href="https://github.com/BrinkOfSecondBailout/BargainHunt" target="_blank"><button class="border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Github</button></a>
-                                <a href="http://54.213.192.7/" target="_blank"><button class="border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Live</button></a>
+                                <a href="https://github.com/BrinkOfSecondBailout/BargainHunt" target="_blank"><button class="pill-button border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Github</button></a>
+                                <a href="http://54.213.192.7/" target="_blank"><button class="pill-button border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Live</button></a>
                             </div>
                         </div>
                     </div>
@@ -255,13 +289,13 @@
                             <p>sample123</p>
                             <p class="font-bold p-1 mt-2">Java | Spring | MySQL</p>
                             <div class="hidden p-2 mt-2 gap-1 lg:flex lg:justify-center">
-                                <a href="https://github.com/BrinkOfSecondBailout/FoodHub" target="_blank"><button class="border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Github</button></a>
-                                <a href="http://34.219.142.108/" target="_blank"><button class="border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Live</button></a>
+                                <a href="https://github.com/BrinkOfSecondBailout/FoodHub" target="_blank"><button class="pill-button border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Github</button></a>
+                                <a href="http://34.219.142.108/" target="_blank"><button class="pill-button border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Live</button></a>
                             </div>
                         </div>
                         <div class="flex justify-center p-2 mt-2 gap-1 lg:hidden">
-                            <a href="https://github.com/BrinkOfSecondBailout/FoodHub" target="_blank"><button class="border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Github</button></a>
-                            <a href="http://34.219.142.108/" target="_blank"><button class="border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Live</button></a>
+                            <a href="https://github.com/BrinkOfSecondBailout/FoodHub" target="_blank"><button class="pill-button border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Github</button></a>
+                            <a href="http://34.219.142.108/" target="_blank"><button class="pill-button border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Live</button></a>
                         </div>
                     </div>
 
@@ -279,19 +313,23 @@
                             <p>sample123</p>
                             <p class="font-bold p-1 mt-2">Python | Flask | MySQL | SqlAlchemy</p>
                             <div class="hidden p-2 mt-2 gap-1 lg:flex lg:justify-center">
-                                <a href="https://github.com/BrinkOfSecondBailout/LoveBirdsApp" target="_blank"><button class="border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Github</button></a>
-                                <a href="http://34.215.117.207/" target="_blank"><button class="border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Live</button></a>
+                                <a href="https://github.com/BrinkOfSecondBailout/LoveBirdsApp" target="_blank"><button class="pill-button border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Github</button></a>
+                                <a href="http://34.215.117.207/" target="_blank"><button class="pill-button border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Live</button></a>
                             </div>
                         </div>
                         <div class="flex justify-center p-2 mt-2 gap-1 lg:hidden">
-                            <a href="https://github.com/BrinkOfSecondBailout/LoveBirdsApp" target="_blank"><button class="border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Github</button></a>
-                            <a href="http://34.215.117.207/" target="_blank"><button class="border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Live</button></a>
+                            <a href="https://github.com/BrinkOfSecondBailout/LoveBirdsApp" target="_blank"><button class="pill-button border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Github</button></a>
+                            <a href="http://34.215.117.207/" target="_blank"><button class="pill-button border-2 border-black bg-gray-100 rounded-full font-outfit text-sm p-2 w-28 h-10 mb-1 md:w-32 md:h-12 md:text-base pill-effect">Live</button></a>
                         </div>
                     </div>
 
                 </div>
             </div>
         </section>
+
+
+
+
 
         <section id="proficiency" class="flex justify-center">
             <div class="flex flex-col items-center -mt-5 md:-mt-14">
@@ -444,15 +482,18 @@
             </div>
         </section>
 
+
+
+
         <section id="contact" class="flex justify-center">
-            <div class="flex flex-col items-center -mt-5 md:-mt-16 ">
+            <div class="flex flex-col items-center -mt-5 md:-mt-16">
                 <h1 class="text-center font-trebuchet text-4xl font-bold md:text-5xl lg:mt-12">Contact Me</h1>
                 <div class="flex items-center p-2 gap-2 mt-4 md:mt-6">
                     <img src="assets/email2.png" class="w-9 md:w-10" alt="Email">
                     <p class="font-outfit md:text-lg lg:text-xl">nguyenduongpa@gmail.com</p>
                 </div>
                 <div class="flex items-center mt-1">
-                    <a href="https://www.linkedin.com/in/softwaredev-danny/" target="_blank"><img src="assets/linkedin-full.png" class="w-20 md:w-24 lg:w-28" alt="Linkedin"></a>
+                    <a href="https://www.linkedin.com/in/softwaredev-danny/" target="_blank"><img src="assets/linkedin-blue-icon.png" class="w-10 md:w-12 lg:w-14" alt="Linkedin"></a>
                 </div>
 
                 <div class="mt-8 md:mt-10 md:w-11/12 lg:w-full">
@@ -490,6 +531,9 @@
                 </div>
             </div>
         </section>
+
+
+
 
         <footer class="lg:hidden">
             <p class="w-2/3 mx-0 mx-auto text-center">Copyright &#169; 2023 Danny Duong.</p>

@@ -58,13 +58,23 @@
     background-size: cover;
 } */
 
-body {
-    background-color: #96d4fc;
+
+.light {
+    background: #96d4fc;
+}
+
+.dark {
+    background: rgba(0, 0, 0, 0.872);
+    color: white;
 }
 
 
 .skyblue {
     background-color: #ffffff;
+}
+
+.dark-top-bar {
+    background: #383838;
 }
 
 
@@ -186,7 +196,7 @@ body {
 
 @keyframes borderAnimation {
     0% {
-        border-color: #3498db;
+        border-color: #2050ff;
         /* Initial border color */
     }
 
@@ -196,7 +206,7 @@ body {
     }
 
     100% {
-        border-color: #3498db;
+        border-color: #3b64f8;
         /* Final border color */
     }
 }

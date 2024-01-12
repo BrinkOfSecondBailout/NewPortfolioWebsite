@@ -601,8 +601,8 @@ video {
     background-size: cover;
 } */
 
-body {
-  background-color: #96d4fc;
+.light {
+  background: #96d4fc;
 }
 
 .skyblue {
@@ -673,14 +673,14 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgba(62, 191, 255, 0.8);
+  background-color: #96d4fc;
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease;
 }
 
 .underline-effect:hover {
-  color: rgba(62, 191, 255, 0.8);
+  color: #96d4fc;
 }
 
 .underline-effect:hover::after {

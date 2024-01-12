@@ -1,3 +1,65 @@
+// Dark Mode button
+let isDarkMode = false;
+
+const toggleDarkModeButtonXl = document.getElementById('toggleDarkModeXl');
+const modeIconXl = document.getElementById('mode-icon-xl');
+const toggleDarkModeButtonLg = document.getElementById('toggleDarkModeLg');
+const modeIconLg = document.getElementById('mode-icon-lg');
+const toggleDarkModeButtonSm = document.getElementById('toggleDarkModeSm');
+const modeIconSm = document.getElementById('mode-icon-sm');
+
+const body = document.body;
+const danny = document.getElementById('danny');
+const topBars = document.querySelectorAll('.top-bar-div');
+const allPills = document.querySelectorAll('.pill-button');
+const lightIconLg = document.getElementById('light-mode-icons-lg');
+const darkIconLg = document.getElementById('dark-mode-icons-lg');
+const lightIconMd = document.getElementById('light-mode-icons-md');
+const darkIconMd = document.getElementById('dark-mode-icons-md');
+
+toggleDarkModeButtonXl.addEventListener('click', () => {
+    isDarkMode = !isDarkMode;
+
+    isDarkMode ? modeIconXl.src='assets/light-mode.png' : modeIconXl.src='assets/dark-mode.png';
+
+    toggleDarkMode();
+});
+
+toggleDarkModeButtonLg.addEventListener('click', () => {
+    isDarkMode = !isDarkMode;
+
+    isDarkMode ? modeIconLg.src='assets/light-mode.png' : modeIconLg.src='assets/dark-mode.png';
+
+    toggleDarkMode();
+});
+
+toggleDarkModeButtonSm.addEventListener('click', () => {
+    isDarkMode = !isDarkMode;
+
+    isDarkMode ? modeIconSm.src='assets/light-mode.png' : modeIconSm.src='assets/dark-mode.png';
+
+    toggleDarkMode();
+});
+
+function toggleDarkMode() {
+    body.classList.toggle('light');
+    body.classList.toggle('dark');
+    danny.classList.toggle('text-blue-400');
+    topBars.forEach(bar => {
+        bar.classList.toggle('skyblue');
+        bar.classList.toggle('dark-top-bar');
+    })
+    allPills.forEach(pill => {
+        pill.classList.toggle('text-black');
+    })
+    lightIconLg.classList.toggle('lg:flex');
+    darkIconLg.classList.toggle('lg:flex');
+    lightIconMd.classList.toggle('flex');
+    lightIconMd.classList.toggle('hidden');
+    darkIconMd.classList.toggle('flex');
+    darkIconMd.classList.toggle('hidden');
+}
+
 // Toggle Hamburger Menu
 
 function toggleMenu() {
