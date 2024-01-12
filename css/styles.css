@@ -154,3 +154,26 @@ body:before {
     background: rgb(24, 24, 24);
     transition: all 0.5s ease;
 }
+
+.pill-effect {
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+}
+.pill-effect:hover {
+    background: rgb(186, 186, 186);
+    color: white;
+    box-shadow: 0 0 10px rgb(186, 186, 186), 0 0 20px rgb(186, 186, 186), 0 0 40px rgb(186, 186, 186);
+}
+
+.pill-effect-blue {
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+}
+
+.pill-effect-blue:hover {
+    background: rgb(19, 125, 255);
+    color: white;
+    box-shadow: 0 0 10px rgb(19, 125, 255), 0 0 20px rgb(19, 125, 255), 0 0 40px rgb(19, 125, 255);
+}
