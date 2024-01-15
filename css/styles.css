@@ -163,9 +163,6 @@
 
 @media (min-width: 1280px) {
 
-    #projects {
-        height: 200vh;
-    }
     #profile2 {
         height: 400px;
         width: 350px;
