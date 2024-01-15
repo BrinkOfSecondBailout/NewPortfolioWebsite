@@ -77,7 +77,6 @@
     background: #383838;
 }
 
-
 #home {
     height: 100vh;
 }
@@ -86,12 +85,13 @@
     height: 135vh;
 }
 
+
 #experience {
     height: 160vh;
 }
 
 #projects {
-    height: 300vh;
+    height: 320vh;
 }
 
 #proficiency {
@@ -101,6 +101,74 @@
 #contact {
     height: 125vh;
 }
+
+@media (max-width: 251px) {
+    #about {
+        height: 190vh;
+    }
+    #experience {
+        height: 220vh;
+    }
+    #projects {
+        height: 350vh;
+    }
+    #proficiency {
+        height: 180vh;
+    }
+
+    #contact {
+        height: 145vh;
+    }
+}
+
+
+@media (min-width: 768px) {
+    #about {
+        height: 100vh;
+    }
+    #experience {
+        height: 120vh;
+    }
+    #projects {
+        height: 240vh;
+    }
+    #proficiency {
+        height: 120vh;
+    }
+    #contact {
+        height: 105vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    #about {
+        height: 100vh;
+    }
+
+    #experience {
+        height: 110vh;
+    }
+
+    #projects {
+        height: 210vh;
+    }
+    #proficiency {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 1280px) {
+    #projects {
+        height: 170vh;
+    }
+    #profile2 {
+        height: 500px;
+        width: 400px;
+    }
+}
+
+
+
 
 .html {
     scroll-behavior: smooth;

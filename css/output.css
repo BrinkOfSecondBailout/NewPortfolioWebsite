@@ -605,8 +605,17 @@ video {
   background: #96d4fc;
 }
 
+.dark {
+  background: rgba(0, 0, 0, 0.872);
+  color: white;
+}
+
 .skyblue {
   background-color: #ffffff;
+}
+
+.dark-top-bar {
+  background: #383838;
 }
 
 #home {
@@ -622,7 +631,7 @@ video {
 }
 
 #projects {
-  height: 300vh;
+  height: 320vh;
 }
 
 #proficiency {
@@ -631,6 +640,74 @@ video {
 
 #contact {
   height: 125vh;
+}
+
+@media (max-width: 251px) {
+  #about {
+    height: 190vh;
+  }
+
+  #experience {
+    height: 220vh;
+  }
+
+  #projects {
+    height: 350vh;
+  }
+
+  #proficiency {
+    height: 180vh;
+  }
+
+  #contact {
+    height: 145vh;
+  }
+}
+
+@media (min-width: 768px) {
+  #about {
+    height: 100vh;
+  }
+
+  #experience {
+    height: 120vh;
+  }
+
+  #projects {
+    height: 240vh;
+  }
+
+  #proficiency {
+    height: 120vh;
+  }
+
+  #contact {
+    height: 105vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  #about {
+    height: 100vh;
+  }
+
+  #experience {
+    height: 110vh;
+  }
+
+  #projects {
+    height: 210vh;
+  }
+
+  #proficiency {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  #projects {
+    height: 170vh;
+  }
 }
 
 .html {
@@ -727,7 +804,7 @@ video {
 
 @keyframes borderAnimation {
   0% {
-    border-color: #3498db;
+    border-color: #2050ff;
     /* Initial border color */
   }
 
@@ -737,7 +814,7 @@ video {
   }
 
   100% {
-    border-color: #3498db;
+    border-color: #3b64f8;
     /* Final border color */
   }
 }
@@ -745,5 +822,3 @@ video {
 .border-animation {
   animation: borderAnimation 4s infinite;
 }
-
-
