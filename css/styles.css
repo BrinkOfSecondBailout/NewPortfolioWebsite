@@ -121,7 +121,7 @@
     }
 }
 
-/* Md */
+/* Phone */
 @media (min-width: 768px) {
     #about {
         height: 100vh;
@@ -140,7 +140,7 @@
     }
 }
 
-/* Lg */
+/* Md */
 @media (min-width: 1024px) {
     #about {
         height: 100vh;
@@ -158,10 +158,10 @@
     }
 }
 
-/* XL */
+/* Lg */
 @media (min-width: 1280px) {
     #projects {
-        height: 170vh;
+        height: 190vh;
     }
     #profile2 {
         height: 400px;
