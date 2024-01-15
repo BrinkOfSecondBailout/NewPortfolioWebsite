@@ -660,26 +660,29 @@ video {
         height: 145vh;
     }
 }
-
+*/
 
 @media (min-width: 768px) {
-    #about {
-        height: 100vh;
-    }
-    #experience {
-        height: 120vh;
-    }
-    #projects {
-        height: 240vh;
-    }
-    #proficiency {
-        height: 120vh;
-    }
-    #contact {
-        height: 105vh;
-    }
+  #about {
+    height: 120vh;
+  }
+
+  #experience {
+    height: 130vh;
+  }
+
+  #projects {
+    height: 300vh;
+  }
+
+  #proficiency {
+    height: 150vh;
+  }
+
+  #contact {
+    height: 125vh;
+  }
 }
-*/
 
 @media (min-width: 1024px) {
   #about {
