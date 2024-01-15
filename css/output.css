@@ -679,35 +679,36 @@ video {
         height: 105vh;
     }
 }
-
+*/
 
 @media (min-width: 1024px) {
-    #about {
-        height: 100vh;
-    }
+  #about {
+    height: 100vh;
+  }
 
-    #experience {
-        height: 120vh;
-    }
+  #experience {
+    height: 120vh;
+  }
 
-    #projects {
-        height: 230vh;
-    }
-    #proficiency {
-        height: 100vh;
-    }
+  #projects {
+    height: 230vh;
+  }
+
+  #proficiency {
+    height: 100vh;
+  }
 }
 
-
 @media (min-width: 1280px) {
-    #projects {
-        height: 190vh;
-    }
-    #profile2 {
-        height: 400px;
-        width: 350px;
-    }
-} */
+  #projects {
+    height: 190vh;
+  }
+
+  #profile2 {
+    height: 400px;
+    width: 350px;
+  }
+}
 
 .html {
   scroll-behavior: smooth;
