@@ -139,7 +139,7 @@
         height: 105vh;
     }
 }
-
+*/
 
 @media (min-width: 1024px) {
     #about {
@@ -157,7 +157,7 @@
         height: 100vh;
     }
 }
-*/
+
 
 @media (min-width: 1280px) {
     #projects {
