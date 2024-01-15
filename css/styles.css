@@ -146,11 +146,11 @@
     }
 
     #experience {
-        height: 110vh;
+        height: 120vh;
     }
 
     #projects {
-        height: 210vh;
+        height: 220vh;
     }
     #proficiency {
         height: 100vh;
@@ -162,8 +162,8 @@
         height: 170vh;
     }
     #profile2 {
-        height: 500px;
-        width: 400px;
+        height: 400px;
+        width: 350px;
     }
 }
 

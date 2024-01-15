@@ -692,11 +692,11 @@ video {
   }
 
   #experience {
-    height: 110vh;
+    height: 120vh;
   }
 
   #projects {
-    height: 210vh;
+    height: 220vh;
   }
 
   #proficiency {
@@ -707,6 +707,11 @@ video {
 @media (min-width: 1280px) {
   #projects {
     height: 170vh;
+  }
+
+  #profile2 {
+    height: 400px;
+    width: 350px;
   }
 }
 
