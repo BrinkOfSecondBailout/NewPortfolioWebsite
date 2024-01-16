@@ -82,24 +82,24 @@
 }
 
 #about {
-    height: 135vh;
+    height: 150vh;
 }
 
 
 #experience {
-    height: 160vh;
+    height: 170vh;
 }
 
 #projects {
-    height: 320vh;
+    height: 335vh;
 }
 
 #proficiency {
-    height: 160vh;
+    height: 170vh;
 }
 
 #contact {
-    height: 125vh;
+    height: 145vh;
 }
 
 /* @media (max-width: 251px) {
