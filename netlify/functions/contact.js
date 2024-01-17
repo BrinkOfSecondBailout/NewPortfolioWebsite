@@ -17,7 +17,7 @@ exports.handler = async function (event, context) {
             from: requestBody.email,
             to: process.env.EMAIL,
             subject: `Message from ${requestBody.email}:`,
-            text: `Hello, my name is ${requestBody.name}. My phone number is ${requestBody.phone}. Email: ${requestBody.email}. My company is ${requestBody.company}. ${requestBody.message}`
+            text: `Full Name: ${requestBody.name}.\nPhone Number: ${requestBody.phone}.\nEmail: ${requestBody.email}.\nCompany: ${requestBody.company}.\n${requestBody.message}`
         };
 
         const info = await transporter.sendMail(mailOptions);
