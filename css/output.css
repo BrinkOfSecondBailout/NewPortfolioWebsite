@@ -623,7 +623,7 @@ video {
 }
 
 #about {
-  height: 150vh;
+  height: 170vh;
 }
 
 #experience {
@@ -818,4 +818,14 @@ video {
 
 .border-animation {
   animation: borderAnimation 4s infinite;
+}
+
+.hover-zoom-effect:hover {
+  transform: scale(1.04);
+  transition: transform 0.4s ease;
+}
+
+.hover-zoom-effect2:hover {
+  transform: scale(1.2);
+  transition: transform 0.4s ease;
 }
