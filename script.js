@@ -138,6 +138,13 @@ document.addEventListener('DOMContentLoaded', function () {
         scrollToTarget(targetSection);
     });
 
+    const contactLink2 = document.getElementById('contact-link2');
+    contactLink2.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetSection = '#contact';
+        scrollToTarget(targetSection);
+    });
+
 });
 
 // for Technical Project page, toggle description and testimony
