@@ -295,6 +295,11 @@
     transition: transform 0.4s ease;
 }
 
+.hover-zoom-effect3:hover {
+    transform: scale(1.2);
+    transition: transform 0.1s ease;
+}
+
 .white-shadow {
     box-shadow: 0 5px 8px -2px gray;
 }
