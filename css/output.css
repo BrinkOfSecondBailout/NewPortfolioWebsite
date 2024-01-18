@@ -631,15 +631,15 @@ video {
 }
 
 #projects {
-  height: 335vh;
+  height: 340vh;
 }
 
 #proficiency {
-  height: 180vh;
+  height: 200vh;
 }
 
 #contact {
-  height: 145vh;
+  height: 150vh;
 }
 
 /* @media (max-width: 251px) {
@@ -828,4 +828,8 @@ video {
 .hover-zoom-effect2:hover {
   transform: scale(1.2);
   transition: transform 0.4s ease;
+}
+
+.white-shadow {
+  box-shadow: 0 5px 8px -2px gray;
 }
