@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Portfolio website that is used to keep all my full stack projects together, display my credentials and contact information. Built with HTML, CSS, and Javascript.
+Portfolio website used to keep all my full stack projects, display my credentials and contact information. Built with HTML, CSS, and JavaScript.
 
 #### Deployed Project: 
 [Click here](http://dannydev.info)
