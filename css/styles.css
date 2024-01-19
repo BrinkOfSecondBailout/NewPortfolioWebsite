@@ -202,20 +202,20 @@
 
 @media (min-width: 1279px) {
     #about {
-        height: 115vh;
+        height: 125vh;
     }
     #experience {
-        height: 125vh;
+        height: 130vh;
     }
 
     #projects {
-        height: 220vh;
+        height: 230vh;
     }
     #proficiency {
         height: 115vh;
     }
     #contact {
-        height: 180vh;
+        height: 170vh;
     }
 
     #profile2 {
