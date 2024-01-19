@@ -668,27 +668,27 @@ video {
 
 @media (min-width: 401px) {
   #home {
-    height: 120vh;
+    height: 100vh;
   }
 
   #about {
-    height: 165vh;
+    height: 140vh;
   }
 
   #experience {
-    height: 190vh;
+    height: 160vh;
   }
 
   #projects {
-    height: 375vh;
+    height: 300vh;
   }
 
   #proficiency {
-    height: 225vh;
+    height: 180vh;
   }
 
   #contact {
-    height: 165vh;
+    height: 130vh;
   }
 }
 
