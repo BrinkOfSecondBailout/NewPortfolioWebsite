@@ -642,27 +642,27 @@ video {
 
 @media (min-width: 252px) {
   #home {
-    height: 125vh;
+    height: 100vh;
   }
 
   #about {
-    height: 210vh;
+    height: 140vh;
   }
 
   #experience {
-    height: 225vh;
+    height: 150vh;
   }
 
   #projects {
-    height: 400vh;
+    height: 280vh;
   }
 
   #proficiency {
-    height: 230vh;
+    height: 170vh;
   }
 
   #contact {
-    height: 160vh;
+    height: 130vh;
   }
 }
 
