@@ -676,7 +676,7 @@ video {
   }
 
   #about {
-    height: 140vh;
+    height: 135vh;
   }
 
   #experience {
@@ -750,23 +750,23 @@ video {
 
 @media (min-width: 1280px) {
   #about {
-    height: 95vh;
+    height: 110vh;
   }
 
   #experience {
-    height: 95vh;
+    height: 105vh;
   }
 
   #projects {
-    height: 165vh;
+    height: 185vh;
   }
 
   #proficiency {
-    height: 90vh;
+    height: 100vh;
   }
 
   #contact {
-    height: 115vh;
+    height: 140vh;
   }
 
   #profile2 {
