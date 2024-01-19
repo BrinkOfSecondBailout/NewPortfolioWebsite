@@ -121,26 +121,28 @@
     }
 }
 
+*/
+
 
 @media (min-width: 768px) {
     #about {
-        height: 120vh;
+        height: 115vh;
     }
     #experience {
-        height: 130vh;
+        height: 120vh;
     }
     #projects {
-        height: 300vh;
+        height: 250vh;
     }
     #proficiency {
         height: 150vh;
     }
     #contact {
-        height: 125vh;
+        height: 120vh;
     }
 }
 
-*/
+
 
 
 @media (min-width: 1024px) {
@@ -193,6 +195,9 @@
 @media (min-width: 1536px) {
     #experience {
         height: 110vh;
+    }
+    #contact {
+        height: 115vh;
     }
 }
 
