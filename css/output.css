@@ -619,6 +619,10 @@ video {
 }
 
 @media (max-width: 251px) {
+  #home {
+    height: 100vh;
+  }
+
   #about {
     height: 210vh;
   }
@@ -642,15 +646,15 @@ video {
 
 @media (min-width: 252px) {
   #home {
-    height: 100vh;
+    height: 90vh;
   }
 
   #about {
-    height: 140vh;
+    height: 130vh;
   }
 
   #experience {
-    height: 150vh;
+    height: 140vh;
   }
 
   #projects {
@@ -668,15 +672,15 @@ video {
 
 @media (min-width: 401px) {
   #home {
-    height: 100vh;
+    height: 90vh;
   }
 
   #about {
-    height: 140vh;
+    height: 130vh;
   }
 
   #experience {
-    height: 160vh;
+    height: 150vh;
   }
 
   #projects {
@@ -694,75 +698,75 @@ video {
 
 @media (min-width: 768px) {
   #home {
-    height: 140vh;
+    height: 110vh;
   }
 
   #about {
-    height: 175vh;
+    height: 110vh;
   }
 
   #experience {
-    height: 205vh;
+    height: 125vh;
   }
 
   #projects {
-    height: 395vh;
+    height: 240vh;
   }
 
   #proficiency {
-    height: 230vh;
+    height: 150vh;
   }
 
   #contact {
-    height: 190vh;
+    height: 110vh;
   }
 }
 
 @media (min-width: 1024px) {
   #home {
-    height: 125vh;
+    height: 120vh;
   }
 
   #about {
-    height: 145vh;
+    height: 135vh;
   }
 
   #experience {
-    height: 125vh;
+    height: 120vh;
   }
 
   #projects {
-    height: 270vh;
+    height: 230vh;
   }
 
   #proficiency {
-    height: 130vh;
+    height: 120vh;
   }
 
   #contact {
-    height: 180vh;
+    height: 160vh;
   }
 }
 
 @media (min-width: 1280px) {
   #about {
-    height: 105vh;
+    height: 95vh;
   }
 
   #experience {
-    height: 115vh;
+    height: 95vh;
   }
 
   #projects {
-    height: 170vh;
+    height: 165vh;
   }
 
   #proficiency {
-    height: 100vh;
+    height: 90vh;
   }
 
   #contact {
-    height: 125vh;
+    height: 115vh;
   }
 
   #profile2 {
@@ -776,8 +780,12 @@ video {
     height: 100vh;
   }
 
-  #experience {
+  #about {
     height: 100vh;
+  }
+
+  #experience {
+    height: 90vh;
   }
 
   #projects {
@@ -785,7 +793,7 @@ video {
   }
 
   #proficiency {
-    height: 100vh;
+    height: 80vh;
   }
 
   #contact {
