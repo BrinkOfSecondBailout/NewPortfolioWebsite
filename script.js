@@ -52,9 +52,9 @@ function toggleDarkMode() {
         bar.classList.toggle('skyblue');
         bar.classList.toggle('dark-top-bar');
     })
-    allPills.forEach(pill => {
-        pill.classList.toggle('text-black');
-    })
+    // allPills.forEach(pill => {
+    //     pill.classList.toggle('text-black');
+    // })
     whiteBoxes.forEach(box => {
         box.classList.toggle('white-shadow');
     })
