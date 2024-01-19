@@ -79,6 +79,7 @@
 
 
 @media (max-width: 251px) {
+    
     #about {
         height: 210vh;
     }
@@ -96,50 +97,76 @@
         height: 145vh;
     }
 }
+@media (min-width: 252px) {
+    #home {
+        height: 125vh;
+    }
+    #about {
+        height: 210vh;
+    }
 
+    #experience {
+        height: 225vh;
+    }
+
+    #projects {
+        height: 400vh;
+    }
+
+    #proficiency {
+        height: 230vh;
+    }
+
+    #contact {
+        height: 160vh;
+    }
+}
 
 
 @media (min-width: 401px) {
     #home {
-        height: 100vh;
+        height: 120vh;
     }
 
     #about {
-        height: 150vh;
-    }
-
-    #experience {
         height: 165vh;
     }
 
-    #projects {
-        height: 305vh;
-    }
-
-    #proficiency {
+    #experience {
         height: 190vh;
     }
 
+    #projects {
+        height: 375vh;
+    }
+
+    #proficiency {
+        height: 225vh;
+    }
+
     #contact {
-        height: 145vh;
+        height: 165vh;
     }
 }
 
 @media (min-width: 768px) {
+    #home {
+        height: 140vh;
+    }
     #about {
-        height: 115vh;
+        height: 175vh;
     }
     #experience {
-        height: 125vh;
+        height: 205vh;
     }
     #projects {
-        height: 245vh;
+        height: 395vh;
     }
     #proficiency {
-        height: 145vh;
+        height: 230vh;
     }
     #contact {
-        height: 115vh;
+        height: 190vh;
     }
 }
 
@@ -147,22 +174,25 @@
 
 
 @media (min-width: 1024px) {
+    #home {
+        height: 125vh;
+    }
     #about {
-        height: 130vh;
+        height: 145vh;
     }
 
     #experience {
-        height: 120vh;
+        height: 125vh;
     }
 
     #projects {
-        height: 230vh;
+        height: 270vh;
     }
     #proficiency {
-        height: 120vh;
+        height: 130vh;
     }
     #contact {
-        height: 160vh;
+        height: 180vh;
     }
 }
 
@@ -194,11 +224,20 @@
 } 
 
 @media (min-width: 1536px) {
+    #home {
+        height: 100vh;
+    }
     #experience {
-        height: 110vh;
+        height: 100vh;
+    }
+    #projects {
+        height: 170vh;
+    }
+    #proficiency {
+        height: 100vh;
     }
     #contact {
-        height: 120vh;
+        height: 115vh;
     }
 }
 
