@@ -680,30 +680,60 @@ video {
     }
 }
 
-
-@media (min-width: 1024px) {
-    #about {
-        height: 100vh;
-    }
-
-    #experience {
-        height: 120vh;
-    }
-
-    #projects {
-        height: 230vh;
-    }
-    #proficiency {
-        height: 100vh;
-    }
-}
-
 */
 
+@media (min-width: 1024px) {
+  #about {
+    height: 130vh;
+  }
+
+  #experience {
+    height: 120vh;
+  }
+
+  #projects {
+    height: 230vh;
+  }
+
+  #proficiency {
+    height: 120vh;
+  }
+
+  #contact {
+    height: 160vh;
+  }
+}
+
 @media (min-width: 1280px) {
+  #about {
+    height: 105vh;
+  }
+
+  #experience {
+    height: 115vh;
+  }
+
+  #projects {
+    height: 170vh;
+  }
+
+  #proficiency {
+    height: 100vh;
+  }
+
+  #contact {
+    height: 125vh;
+  }
+
   #profile2 {
     height: 400px;
     width: 350px;
+  }
+}
+
+@media (min-width: 1536px) {
+  #experience {
+    height: 110vh;
   }
 }
 
