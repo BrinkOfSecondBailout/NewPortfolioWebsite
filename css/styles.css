@@ -77,43 +77,19 @@
     background: #383838;
 }
 
-#home {
-    height: 100vh;
-}
 
-#about {
-    height: 170vh;
-}
-
-
-#experience {
-    height: 170vh;
-}
-
-#projects {
-    height: 340vh;
-}
-
-#proficiency {
-    height: 200vh;
-}
-
-#contact {
-    height: 150vh;
-}
-
-/* @media (max-width: 251px) {
+@media (max-width: 251px) {
     #about {
-        height: 190vh;
+        height: 210vh;
     }
     #experience {
-        height: 220vh;
+        height: 225vh;
     }
     #projects {
         height: 350vh;
     }
     #proficiency {
-        height: 180vh;
+        height: 200vh;
     }
 
     #contact {
@@ -121,7 +97,7 @@
     }
 }
 
-*/
+
 
 @media (min-width: 401px) {
     #home {
@@ -129,7 +105,7 @@
     }
 
     #about {
-        height: 155vh;
+        height: 150vh;
     }
 
     #experience {
@@ -137,15 +113,15 @@
     }
 
     #projects {
-        height: 315vh;
+        height: 305vh;
     }
 
     #proficiency {
-        height: 200vh;
+        height: 190vh;
     }
 
     #contact {
-        height: 150vh;
+        height: 145vh;
     }
 }
 
@@ -154,16 +130,16 @@
         height: 115vh;
     }
     #experience {
-        height: 120vh;
+        height: 125vh;
     }
     #projects {
-        height: 250vh;
+        height: 245vh;
     }
     #proficiency {
-        height: 150vh;
+        height: 145vh;
     }
     #contact {
-        height: 120vh;
+        height: 115vh;
     }
 }
 
@@ -222,7 +198,7 @@
         height: 110vh;
     }
     #contact {
-        height: 115vh;
+        height: 120vh;
     }
 }
 
