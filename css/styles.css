@@ -79,7 +79,9 @@
 
 
 @media (max-width: 251px) {
-    
+    #home {
+        height: 100vh;
+    }
     #about {
         height: 210vh;
     }
@@ -99,14 +101,14 @@
 }
 @media (min-width: 252px) {
     #home {
-        height: 100vh;
+        height: 95vh;
     }
     #about {
-        height: 140vh;
+        height: 135vh;
     }
 
     #experience {
-        height: 150vh;
+        height: 145vh;
     }
 
     #projects {
@@ -125,15 +127,15 @@
 
 @media (min-width: 401px) {
     #home {
-        height: 100vh;
+        height: 95vh;
     }
 
     #about {
-        height: 140vh;
+        height: 135vh;
     }
 
     #experience {
-        height: 160vh;
+        height: 155vh;
     }
 
     #projects {
