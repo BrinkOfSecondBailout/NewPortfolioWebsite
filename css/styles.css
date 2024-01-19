@@ -200,22 +200,22 @@
 
 
 
-@media (min-width: 1280px) {
+@media (min-width: 1279px) {
     #about {
         height: 115vh;
     }
     #experience {
-        height: 115vh;
+        height: 125vh;
     }
 
     #projects {
-        height: 200vh;
+        height: 220vh;
     }
     #proficiency {
-        height: 110vh;
+        height: 115vh;
     }
     #contact {
-        height: 160vh;
+        height: 180vh;
     }
 
     #profile2 {
