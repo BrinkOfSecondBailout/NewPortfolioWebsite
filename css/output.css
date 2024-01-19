@@ -663,6 +663,32 @@ video {
 
 */
 
+@media (min-width: 401px) {
+  #home {
+    height: 100vh;
+  }
+
+  #about {
+    height: 155vh;
+  }
+
+  #experience {
+    height: 165vh;
+  }
+
+  #projects {
+    height: 315vh;
+  }
+
+  #proficiency {
+    height: 200vh;
+  }
+
+  #contact {
+    height: 150vh;
+  }
+}
+
 @media (min-width: 768px) {
   #about {
     height: 115vh;
