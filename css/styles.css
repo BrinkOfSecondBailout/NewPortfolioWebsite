@@ -177,21 +177,21 @@
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 7px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #d6d6d6;
     border-radius: 7px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #b6b6b6;
+    background: #7a7a7a;
     border-radius: 7px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #000000;
 }
 
 .zoom-effect:hover {
