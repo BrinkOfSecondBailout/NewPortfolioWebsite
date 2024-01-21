@@ -389,14 +389,14 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #96d4fc;
+    background-color: #2dabff;
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.3s ease;
 }
 
 .underline-effect:hover {
-    color: #96d4fc;
+    color: #2dabff;
 }
 
 .underline-effect:hover::after {
@@ -482,9 +482,9 @@
 }
 
 .white-bg {
-    background-image: linear-gradient(#96d4fc, rgba(255, 255, 255, 0.632));
+    background-image: linear-gradient(#96d4fc, rgba(255, 255, 255, 0.393));
 }
 
 .black-bg {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.251),#000000b9);
+    background-image: linear-gradient(#000000b9, rgba(255, 255, 255, 0.151));
 }

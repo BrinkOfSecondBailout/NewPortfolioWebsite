@@ -15,6 +15,8 @@ const topBars = document.querySelectorAll('.top-bar-div');
 const allPills = document.querySelectorAll('.pill-button');
 const whiteBoxes = document.querySelectorAll('.white-box');
 const resumeButtons = document.querySelectorAll('.resume-button');
+const contact = document.getElementById('contact-form');
+
 const whiteBackgrounds = document.querySelectorAll('.white-bg');
 const lightIconLg = document.getElementById('light-mode-icons-lg');
 const darkIconLg = document.getElementById('dark-mode-icons-lg');
@@ -66,6 +68,11 @@ function toggleDarkMode() {
         bg.classList.toggle('white-bg');
         bg.classList.toggle('black-bg');
     })
+
+    contact.classList.toggle('bg-white');
+    contact.classList.toggle('bg-gray-400');
+    contact.classList.toggle('text-white');
+
     lightIconLg.classList.toggle('lg:flex');
     darkIconLg.classList.toggle('lg:flex');
     lightIconMd.classList.toggle('flex');
