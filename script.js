@@ -14,6 +14,7 @@ const danny = document.getElementById('danny');
 const topBars = document.querySelectorAll('.top-bar-div');
 const allPills = document.querySelectorAll('.pill-button');
 const whiteBoxes = document.querySelectorAll('.white-box');
+const resumeButtons = document.querySelectorAll('.resume-button');
 const whiteBackgrounds = document.querySelectorAll('.white-bg');
 const lightIconLg = document.getElementById('light-mode-icons-lg');
 const darkIconLg = document.getElementById('dark-mode-icons-lg');
@@ -52,9 +53,12 @@ function toggleDarkMode() {
         bar.classList.toggle('skyblue');
         bar.classList.toggle('dark-top-bar');
     })
-    // allPills.forEach(pill => {
-    //     pill.classList.toggle('text-black');
-    // })
+    allPills.forEach(pill => {
+        pill.classList.toggle('text-black');
+    })
+    resumeButtons.forEach(button => {
+        button.classList.toggle('text-black');
+    })
     whiteBoxes.forEach(box => {
         box.classList.toggle('white-shadow');
     })

@@ -588,19 +588,6 @@ video {
   width: 100%;
 }
 
-/* body:before {
-    content: "";
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-    background: url(/assets/sky-bg2.jpg) no-repeat center center;
-    background-size: cover;
-} */
-
 .light {
   background: #96d4fc;
 }
@@ -618,186 +605,290 @@ video {
   background: #383838;
 }
 
+/* @media (max-width: 251px) {
+    #home {
+        height: 100vh;
+    }
+    #about {
+        height: 210vh;
+    }
+    #experience {
+        height: 230vh;
+    }
+    #projects {
+        height: 350vh;
+    }
+    #proficiency {
+        height: 200vh;
+    }
+
+    #contact {
+        height: 145vh;
+    }
+} 
+
+@media (min-width: 252px) {
+    #home {
+        height: 90vh;
+    }
+    #about {
+        height: 135vh;
+    }
+
+    #experience {
+        height: 145vh;
+    }
+
+    #projects {
+        height: 280vh;
+    }
+
+    #proficiency {
+        height: 170vh;
+    }
+
+    #contact {
+        height: 130vh;
+    }
+}
+
+
+@media (min-width: 401px) {
+    #home {
+        height: 90vh;
+    }
+
+    #about {
+        height: 140vh;
+    }
+
+    #experience {
+        height: 155vh;
+    }
+
+    #projects {
+        height: 300vh;
+    }
+
+    #proficiency {
+        height: 180vh;
+    }
+
+    #contact {
+        height: 130vh;
+    }
+}
+
+@media (min-width: 768px) {
+    #home {
+        height: 110vh;
+    }
+    #about {
+        height: 110vh;
+    }
+    #experience {
+        height: 125vh;
+    }
+    #projects {
+        height: 240vh;
+    }
+    #proficiency {
+        height: 150vh;
+    }
+    #contact {
+        height: 110vh;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    #home {
+        height: 120vh;
+    }
+    #about {
+        height: 135vh;
+    }
+
+    #experience {
+        height: 120vh;
+    }
+
+    #projects {
+        height: 230vh;
+    }
+    #proficiency {
+        height: 120vh;
+    }
+    #contact {
+        height: 160vh;
+    }
+}
+
+
+@media (min-width: 1279px) {
+    #about {
+        height: 125vh;
+    }
+    #experience {
+        height: 130vh;
+    }
+
+    #projects {
+        height: 230vh;
+    }
+    #proficiency {
+        height: 115vh;
+    }
+    #contact {
+        height: 170vh;
+    }
+
+    #profile2 {
+        height: 400px;
+        width: 350px;
+    }
+} 
+
+@media (min-width: 1536px) {
+    #home {
+        height: 100vh;
+    }
+    #about {
+        height: 100vh;
+    }
+    #experience {
+        height: 90vh;
+    }
+    #projects {
+        height: 170vh;
+    }
+    #proficiency {
+        height: 80vh;
+    }
+    #contact {
+        height: 115vh;
+    }
+}*/
+
 @media (max-width: 251px) {
-  #home {
-    height: 100vh;
-  }
-
-  #about {
-    height: 210vh;
-  }
-
-  #experience {
-    height: 230vh;
-  }
-
-  #projects {
-    height: 350vh;
-  }
-
-  #proficiency {
-    height: 200vh;
+  #home, #about, #experience, #projects, #proficiency {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 15vh;
   }
 
   #contact {
-    height: 145vh;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 10vh;
   }
 }
 
 @media (min-width: 252px) {
-  #home {
-    height: 90vh;
-  }
-
-  #about {
-    height: 130vh;
-  }
-
-  #experience {
-    height: 145vh;
-  }
-
-  #projects {
-    height: 280vh;
-  }
-
-  #proficiency {
-    height: 170vh;
+  #home, #about, #experience, #projects,  #proficiency {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 15vh;
   }
 
   #contact {
-    height: 130vh;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 10vh;
   }
 }
 
 @media (min-width: 401px) {
-  #home {
-    height: 90vh;
-  }
-
-  #about {
-    height: 135vh;
-  }
-
-  #experience {
-    height: 155vh;
-  }
-
-  #projects {
-    height: 300vh;
-  }
-
-  #proficiency {
-    height: 180vh;
+  #home, #about, #experience, #projects,  #proficiency {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 15vh;
   }
 
   #contact {
-    height: 130vh;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 10vh;
   }
 }
 
 @media (min-width: 768px) {
   #home {
-    height: 110vh;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 40vh;
   }
 
-  #about {
-    height: 110vh;
-  }
-
-  #experience {
-    height: 125vh;
-  }
-
-  #projects {
-    height: 240vh;
-  }
-
-  #proficiency {
-    height: 150vh;
+  #about, #experience, #projects,  #proficiency {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 15vh;
   }
 
   #contact {
-    height: 110vh;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 10vh;
   }
 }
 
 @media (min-width: 1024px) {
   #home {
-    height: 120vh;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 40vh;
   }
 
-  #about {
-    height: 135vh;
-  }
-
-  #experience {
-    height: 120vh;
-  }
-
-  #projects {
-    height: 230vh;
-  }
-
-  #proficiency {
-    height: 120vh;
+  #about, #experience, #projects,  #proficiency {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 15vh;
   }
 
   #contact {
-    height: 160vh;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 10vh;
   }
 }
 
 @media (min-width: 1279px) {
-  #about {
-    height: 125vh;
+  #home {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 45vh;
   }
 
-  #experience {
-    height: 130vh;
-  }
-
-  #projects {
-    height: 230vh;
-  }
-
-  #proficiency {
-    height: 115vh;
+  #about, #experience, #projects,  #proficiency {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 25vh;
   }
 
   #contact {
-    height: 170vh;
-  }
-
-  #profile2 {
-    height: 400px;
-    width: 350px;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 10vh;
   }
 }
 
 @media (min-width: 1536px) {
   #home {
-    height: 100vh;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 45vh;
   }
 
-  #about {
-    height: 100vh;
-  }
-
-  #experience {
-    height: 90vh;
-  }
-
-  #projects {
-    height: 170vh;
-  }
-
-  #proficiency {
-    height: 80vh;
+  #about, #experience, #projects,  #proficiency {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 25vh;
   }
 
   #contact {
-    height: 115vh;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 10vh;
   }
 }
 
