@@ -304,6 +304,17 @@
         height: fit-content;
         padding-bottom: 45vh;
     }
+    #profile2 {
+        height: 400px;
+        width: 350px;
+    }
+    
+    #testimony {
+        height: 29rem;
+    }
+    #description {
+        height: 29rem;
+    }
     #about, #experience, #projects,  #proficiency {
         height: fit-content;
         padding-bottom: 25vh;
@@ -323,10 +334,18 @@
         height: fit-content;
         padding-bottom: 25vh;
     }
+
+    #testimony {
+        height: 27rem;
+    }
+    #description {
+        height: 27rem;
+    }
     #contact {
         height: fit-content;
         padding-bottom: 10vh;
     }
+
 }
 
 
