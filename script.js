@@ -71,7 +71,7 @@ function toggleDarkMode() {
 
     contact.classList.toggle('bg-white');
     contact.classList.toggle('bg-gray-400');
-    contact.classList.toggle('text-white');
+    contact.classList.toggle('text-black');
 
     lightIconLg.classList.toggle('lg:flex');
     darkIconLg.classList.toggle('lg:flex');
