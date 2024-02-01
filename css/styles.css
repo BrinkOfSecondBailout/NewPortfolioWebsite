@@ -49,7 +49,10 @@
     width: 100%;
 }
 
-
+.warning {
+    font-size: 15px;
+    color: red;
+}
 
 .light {
     background: #96d4fc;
