@@ -85,7 +85,7 @@
 
 
 @media (max-width: 251px) {
-    #home, #about, #experience, #projects, #proficiency {
+    #home, #about, #experience, #projects, #credentials, #proficiency {
         height: fit-content;
         padding-bottom: 15vh;
     }
@@ -97,7 +97,7 @@
 }
 
 @media (min-width: 252px) {
-    #home, #about, #experience, #projects,  #proficiency {
+    #home, #about, #experience, #projects, #credentials, #proficiency {
         height: fit-content;
         padding-bottom: 15vh;
     }
@@ -109,7 +109,7 @@
 }
 
 @media (min-width: 401px) {
-    #home, #about, #experience, #projects,  #proficiency {
+    #home, #about, #experience, #projects, #credentials, #proficiency {
         height: fit-content;
         padding-bottom: 15vh;
     }
@@ -125,7 +125,7 @@
         padding-bottom: 40vh;
     }
 
-    #about, #experience, #projects,  #proficiency {
+    #about, #experience, #projects, #credentials, #proficiency {
         height: fit-content;
         padding-bottom: 15vh;
     }
@@ -141,7 +141,7 @@
         height: fit-content;
         padding-bottom: 40vh;
     }
-    #about, #experience, #projects,  #proficiency {
+    #about, #experience, #projects, #credentials, #proficiency {
         height: fit-content;
         padding-bottom: 15vh;
     }
@@ -167,7 +167,7 @@
     #description {
         height: 29rem;
     }
-    #about, #experience, #projects,  #proficiency {
+    #about, #experience, #projects, #credentials, #proficiency {
         height: fit-content;
         padding-bottom: 25vh;
     }
@@ -182,7 +182,7 @@
         height: fit-content;
         padding-bottom: 45vh;
     }
-    #about, #experience, #projects,  #proficiency {
+    #about, #experience, #projects, #credentials, #proficiency {
         height: fit-content;
         padding-bottom: 25vh;
     }
