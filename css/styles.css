@@ -14,6 +14,10 @@
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+.font-barlow {
+    font-family: 'Barlow', sans-serif;
+}
+
 .font-alfa {
     font-family: 'Alfa Slab One', serif;
 }
